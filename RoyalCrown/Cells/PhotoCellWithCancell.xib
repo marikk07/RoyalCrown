@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCellWithCancell" id="gTV-IL-0wX" customClass="PhotoCellWithCancell" customModule="RoyalCrown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="251" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A9z-KL-QGi">
+                        <rect key="frame" x="0.0" y="0.0" width="251" height="160"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete_photo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="HCM-mA-yXV">
+                        <rect key="frame" x="227" y="0.0" width="24" height="24"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="A9z-KL-QGi" secondAttribute="bottom" id="drw-07-iGk"/>
+                <constraint firstAttribute="trailing" secondItem="A9z-KL-QGi" secondAttribute="trailing" id="hOq-9W-ow8"/>
+                <constraint firstItem="A9z-KL-QGi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="je0-im-8Jz"/>
+                <constraint firstItem="HCM-mA-yXV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kuo-cb-2Q8"/>
+                <constraint firstItem="A9z-KL-QGi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nzh-y3-wbB"/>
+                <constraint firstAttribute="trailing" secondItem="HCM-mA-yXV" secondAttribute="trailing" id="tlF-QZ-1j8"/>
+            </constraints>
+            <size key="customSize" width="251" height="160"/>
+            <connections>
+                <outlet property="backgroundImg" destination="A9z-KL-QGi" id="fr1-Ua-DUa"/>
+            </connections>
+            <point key="canvasLocation" x="15.5" y="71"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete_photo_icon" width="24" height="24"/>
+    </resources>
+</document>

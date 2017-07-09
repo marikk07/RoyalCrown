@@ -365,10 +365,10 @@ Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mzF-Dn-FGj">
-                                                <rect key="frame" x="20" y="283" width="335" height="100"/>
+                                                <rect key="frame" x="20" y="283" width="335" height="140"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="jj6-wg-Xyi"/>
+                                                    <constraint firstAttribute="height" constant="140" id="jj6-wg-Xyi"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c2p-7v-Z1O">
                                                     <size key="itemSize" width="50" height="50"/>
@@ -383,7 +383,7 @@ Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 </connections>
                                             </collectionView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-7M-LbB">
-                                                <rect key="frame" x="0.0" y="391" width="375" height="40"/>
+                                                <rect key="frame" x="0.0" y="431" width="375" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Agree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTd-Lh-e1m">
                                                         <rect key="frame" x="20" y="10" width="54" height="21"/>
@@ -405,7 +405,7 @@ Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKc-Kl-DGE">
-                                                <rect key="frame" x="120" y="471" width="136" height="30"/>
+                                                <rect key="frame" x="120" y="511" width="136" height="30"/>
                                                 <state key="normal" title="REPORT ACCIDENT"/>
                                             </button>
                                         </subviews>
@@ -583,7 +583,7 @@ Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="switchCameraAction:" destination="2u2-Hm-aFM" eventType="touchUpInside" id="zPy-Nn-h5p"/>
+                                    <action selector="switchCameraAction:" destination="2u2-Hm-aFM" eventType="touchUpInside" id="sKE-dK-Fa7"/>
                                 </connections>
                             </button>
                         </subviews>

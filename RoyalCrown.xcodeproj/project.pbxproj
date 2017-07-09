@@ -14,6 +14,8 @@
 		562540381F10B29C00C38A0C /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562540361F10B29C00C38A0C /* MainCell.xib */; };
 		562540401F10BE0400C38A0C /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5625403E1F10BE0400C38A0C /* PhotoCell.swift */; };
 		562540411F10BE0400C38A0C /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5625403F1F10BE0400C38A0C /* PhotoCell.xib */; };
+		567A25CD1F12043B004D3AC1 /* PhotoCellWithCancell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A25CB1F12043B004D3AC1 /* PhotoCellWithCancell.swift */; };
+		567A25CE1F12043B004D3AC1 /* PhotoCellWithCancell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 567A25CC1F12043B004D3AC1 /* PhotoCellWithCancell.xib */; };
 		56C4A4381F0AA80D008E9867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4A4371F0AA80D008E9867 /* AppDelegate.swift */; };
 		56C4A43D1F0AA80D008E9867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C4A43B1F0AA80D008E9867 /* Main.storyboard */; };
 		56C4A43F1F0AA80D008E9867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C4A43E1F0AA80D008E9867 /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 		562540361F10B29C00C38A0C /* MainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainCell.xib; path = HomeScreenViewController/MainCell.xib; sourceTree = "<group>"; };
 		5625403E1F10BE0400C38A0C /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = Cells/PhotoCell.swift; sourceTree = "<group>"; };
 		5625403F1F10BE0400C38A0C /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoCell.xib; path = Cells/PhotoCell.xib; sourceTree = "<group>"; };
+		567A25CB1F12043B004D3AC1 /* PhotoCellWithCancell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCellWithCancell.swift; path = Cells/PhotoCellWithCancell.swift; sourceTree = "<group>"; };
+		567A25CC1F12043B004D3AC1 /* PhotoCellWithCancell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoCellWithCancell.xib; path = Cells/PhotoCellWithCancell.xib; sourceTree = "<group>"; };
 		56C4A4341F0AA80D008E9867 /* RoyalCrown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoyalCrown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C4A4371F0AA80D008E9867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C4A43C1F0AA80D008E9867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 		562540391F10B94700C38A0C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				567A25CA1F120416004D3AC1 /* PhotoCellWithCancell */,
 				5625403B1F10B96800C38A0C /* PhotoCell */,
 				5625403A1F10B95600C38A0C /* MainCell */,
 			);
@@ -150,6 +155,15 @@
 				5625403F1F10BE0400C38A0C /* PhotoCell.xib */,
 			);
 			name = PhotoCell;
+			sourceTree = "<group>";
+		};
+		567A25CA1F120416004D3AC1 /* PhotoCellWithCancell */ = {
+			isa = PBXGroup;
+			children = (
+				567A25CB1F12043B004D3AC1 /* PhotoCellWithCancell.swift */,
+				567A25CC1F12043B004D3AC1 /* PhotoCellWithCancell.xib */,
+			);
+			name = PhotoCellWithCancell;
 			sourceTree = "<group>";
 		};
 		56C4A42B1F0AA80D008E9867 = {
@@ -446,6 +460,7 @@
 				56C4A4421F0AA80D008E9867 /* LaunchScreen.storyboard in Resources */,
 				56C4A43F1F0AA80D008E9867 /* Assets.xcassets in Resources */,
 				562540381F10B29C00C38A0C /* MainCell.xib in Resources */,
+				567A25CE1F12043B004D3AC1 /* PhotoCellWithCancell.xib in Resources */,
 				56C4A43D1F0AA80D008E9867 /* Main.storyboard in Resources */,
 				562540411F10BE0400C38A0C /* PhotoCell.xib in Resources */,
 			);
@@ -613,6 +628,7 @@
 				56C4A4791F0C9319008E9867 /* AboutRoyalAssistViewController.swift in Sources */,
 				56C4A4761F0C18E7008E9867 /* AlertHelper.swift in Sources */,
 				56C4A4711F0B5333008E9867 /* RoyalAssistViewController.swift in Sources */,
+				567A25CD1F12043B004D3AC1 /* PhotoCellWithCancell.swift in Sources */,
 				56C9EDB71F0DEE120080A4D8 /* CameraViewController.swift in Sources */,
 				56C9EDAB1F0CA52C0080A4D8 /* AccidentReportPhotoCell.swift in Sources */,
 				562540371F10B29C00C38A0C /* MainCell.swift in Sources */,

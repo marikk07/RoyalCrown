@@ -20,7 +20,7 @@ struct TableViewCellIdentifiers {
 struct CollectionViewCellIdentifiers {
     static let mainCell = "MainCell"
     static let photoCell = "PhotoCell"
-    
+    static let photoCellWithCancell = "PhotoCellWithCancell"
     
 }
 

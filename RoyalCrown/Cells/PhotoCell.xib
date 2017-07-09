@@ -21,17 +21,26 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8yI-2r-lqV">
                         <rect key="frame" x="0.0" y="0.0" width="192" height="124"/>
                     </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsI-sI-GfS">
+                        <rect key="frame" x="0.0" y="0.0" width="192" height="124"/>
+                        <color key="backgroundColor" white="1" alpha="0.29899317781690143" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="bsI-sI-GfS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mzu-NH-9Jx"/>
+                <constraint firstAttribute="trailing" secondItem="bsI-sI-GfS" secondAttribute="trailing" id="Rdz-Y6-VKv"/>
                 <constraint firstItem="8yI-2r-lqV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SOu-Hn-F9Q"/>
                 <constraint firstAttribute="trailing" secondItem="8yI-2r-lqV" secondAttribute="trailing" id="Sy7-Qd-bVE"/>
                 <constraint firstAttribute="bottom" secondItem="8yI-2r-lqV" secondAttribute="bottom" id="VbJ-uP-mJi"/>
+                <constraint firstItem="bsI-sI-GfS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qUQ-Lw-rWq"/>
                 <constraint firstItem="8yI-2r-lqV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="urd-Bw-tm5"/>
+                <constraint firstAttribute="bottom" secondItem="bsI-sI-GfS" secondAttribute="bottom" id="uwA-be-tUH"/>
             </constraints>
             <size key="customSize" width="192" height="124"/>
             <connections>
                 <outlet property="backImage" destination="8yI-2r-lqV" id="yLN-ke-Q1r"/>
+                <outlet property="selectedView" destination="bsI-sI-GfS" id="aeV-Gb-edl"/>
             </connections>
             <point key="canvasLocation" x="95" y="151"/>
         </collectionViewCell>
