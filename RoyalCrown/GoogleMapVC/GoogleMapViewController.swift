@@ -21,7 +21,7 @@ class GoogleMapViewController: UIViewController, GMSMapViewDelegate {
     
     @IBOutlet private weak var bottomViewHeightContstraight: NSLayoutConstraint!
     
-    private var brachArray : NSArray = []
+    private var brachArray : [Any] = []
     private var markersArray : NSMutableArray = []
     
     var locationManager = CLLocationManager()
@@ -32,7 +32,7 @@ class GoogleMapViewController: UIViewController, GMSMapViewDelegate {
         super.viewDidLoad()
         RestManager().branches { (branchArray, error) in
             if (error == nil) {
-                self.brachArray = branchArray as! NSArray
+                self.brachArray = branchArray as! [Any]
                 self.setMapView()
             }
         }
@@ -66,7 +66,7 @@ class GoogleMapViewController: UIViewController, GMSMapViewDelegate {
         
         mapView.addObserver(self, forKeyPath: "myLocation", options: NSKeyValueObservingOptions.new, context: nil)
     
-        let path = GMSMutablePath.init()
+        let path = GMSMutablePath()
         for marker in markersArray {
             path.add((marker as! GMSMarker).position)
         }

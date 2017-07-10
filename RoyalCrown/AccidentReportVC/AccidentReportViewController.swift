@@ -83,8 +83,8 @@ class AccidentReportViewController: UIViewController, UICollectionViewDataSource
     
     // MARK: CameraDelegate
     
-    func fetchPhotos(photosArray: NSArray) {
-        photoArray.addObjects(from: photosArray as! [Any])
+    func fetchPhotos(photosArray: [Any]) {
+        photoArray.addObjects(from: photosArray)
         photoCollectionView.reloadData()
     }
     

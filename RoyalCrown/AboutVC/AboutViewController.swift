@@ -12,7 +12,6 @@ class AboutViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     @IBOutlet weak var homeCollectionView: UICollectionView!
     
-  private  let cellCount = 3
   private  let cellsImgArry = ["royal_assist_image","royal_payment_image","services_image"]
   private  let cellsTitlesArray = ["ABOUT US", "BRANCHES", "E-NSURED"]
     
@@ -32,7 +31,7 @@ class AboutViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     // MARK: - UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cellCount
+        return cellsImgArry.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -45,13 +44,11 @@ class AboutViewController: UIViewController, UICollectionViewDataSource, UIColle
     // MARK: - UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
         switch indexPath.row {
         case 0:  break
             
         case 1:
-            let vc = storyboard.instantiateViewController(withIdentifier:ViewControllersIdentifiers.mapViewController) as! GoogleMapViewController
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.mapViewController) as! GoogleMapViewController
             self.navigationController?.pushViewController(vc, animated: true)
             
         case 2: break

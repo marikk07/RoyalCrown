@@ -11,7 +11,6 @@ import UIKit
 class HomeScreenViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var homeCollectionView: UICollectionView!
-    let cellCount = 6
     let cellsImgArry = ["royal_assist_image","royal_payment_image","services_image", "what_to_do_if_image", "about_image", "royal_assist_image"]
     
     let cellsTitlesArray = ["ROYAL ASSIST", "ROYAL PAYMENT", "SERVICES", "WHAT TO DO IF", "ABOUT", "QUESTIONARIS"]
@@ -32,7 +31,7 @@ class HomeScreenViewController: UIViewController, UICollectionViewDataSource, UI
     // MARK: - UICollectionViewDataSource
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cellCount
+        return cellsImgArry.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -58,11 +57,10 @@ class HomeScreenViewController: UIViewController, UICollectionViewDataSource, UI
     // MARK - UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
+        
         switch indexPath.row {
         case 0:
-            let vc = storyboard.instantiateViewController(withIdentifier:ViewControllersIdentifiers.royalAssistViewController) as! RoyalAssistViewController
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.royalAssistViewController) as! RoyalAssistViewController
             self.navigationController?.pushViewController(vc, animated: true)
             
         case 1: break
@@ -70,7 +68,7 @@ class HomeScreenViewController: UIViewController, UICollectionViewDataSource, UI
         case 2: break
         case 3: break
         case 4:
-            let vc = storyboard.instantiateViewController(withIdentifier:ViewControllersIdentifiers.aboutViewController) as! AboutViewController
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.aboutViewController) as! AboutViewController
             self.navigationController?.pushViewController(vc, animated: true)
             
         case 5: break

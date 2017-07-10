@@ -11,7 +11,6 @@ import UIKit
 class RoyalAssistViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var royalCollectionView: UICollectionView!
 
-    let cellCount = 3
     let cellsImgArry = ["royal_assist_image","royal_payment_image","services_image"]
     let cellsTitlesArray = ["REPORT AN ACCIDENT", "MAKE A CALL", "ABOUT ROYAL ASSIST"]
 
@@ -24,7 +23,7 @@ class RoyalAssistViewController: UIViewController, UICollectionViewDataSource, U
     // MARK: - UICollectionViewDataSource
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cellCount
+        return cellsImgArry.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -46,15 +45,14 @@ class RoyalAssistViewController: UIViewController, UICollectionViewDataSource, U
     // MARK - UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         switch indexPath.row {
         case  0:
-            let vc = storyboard.instantiateViewController(withIdentifier:ViewControllersIdentifiers.accidentReportViewController) as! AccidentReportViewController
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.accidentReportViewController) as! AccidentReportViewController
             self.navigationController?.pushViewController(vc, animated: true)
         case 1:
             self.showCallAlert()
         case 2:
-            let vc = storyboard.instantiateViewController(withIdentifier:ViewControllersIdentifiers.aboutRoyalViewController) as! AboutRoyalAssistViewController
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.aboutRoyalViewController) as! AboutRoyalAssistViewController
             self.navigationController?.pushViewController(vc, animated: true)
         default: break
         }

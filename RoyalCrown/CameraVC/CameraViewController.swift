@@ -11,7 +11,7 @@ import AVFoundation
 import Photos
 
 protocol CameraDelegate {
-    func fetchPhotos(photosArray: NSArray)
+    func fetchPhotos(photosArray: [Any])
 }
 
 
@@ -216,10 +216,10 @@ class CameraViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     func fetchPhotoFromLibrary() {
-        let options = PHFetchOptions.init()
+        let options = PHFetchOptions()
         options.sortDescriptors = [NSSortDescriptor.init(key: "creationDate", ascending: false)]
         assetsFetchResults = PHAsset.fetchAssets(with: options) as? PHFetchResult<AnyObject>
-        imageManager = PHCachingImageManager.init()
+        imageManager = PHCachingImageManager()
     }
     
 
