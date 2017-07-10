@@ -407,6 +407,9 @@ Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKc-Kl-DGE">
                                                 <rect key="frame" x="120" y="511" width="136" height="30"/>
                                                 <state key="normal" title="REPORT ACCIDENT"/>
+                                                <connections>
+                                                    <action selector="reportAction:" destination="sSm-P0-nsN" eventType="touchUpInside" id="P9Q-eg-RTr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -782,7 +785,7 @@ Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJI-Y1-int">
-                                        <rect key="frame" x="0.0" y="453" width="375" height="150"/>
+                                        <rect key="frame" x="0.0" y="553" width="375" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-wD-G2H">
                                                 <rect key="frame" x="309" y="8" width="46" height="30"/>
@@ -795,37 +798,67 @@ Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <rect key="frame" x="243" y="8" width="46" height="30"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
+                                                    <action selector="makeDirection:" destination="ZZT-1k-ccX" eventType="touchUpInside" id="0Ng-dl-Q3l"/>
                                                     <action selector="makePathAction:" destination="ZZT-1k-ccX" eventType="touchUpInside" id="Qms-mF-SXR"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z45-YT-Hpu">
-                                                <rect key="frame" x="8" y="8" width="42" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="8" y="8" width="37.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qgf-TM-IEy">
-                                                <rect key="frame" x="8" y="46" width="359" height="96"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJz-wn-6af">
+                                                <rect key="frame" x="8" y="46" width="37.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kO-IE-2qp">
+                                                <rect key="frame" x="8" y="98" width="37.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-KG-4LO">
+                                                <rect key="frame" x="8" y="124" width="37.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W2-Qz-gDD">
+                                                <rect key="frame" x="8" y="72" width="37.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqA-sC-nt0">
+                                                <rect key="frame" x="8" y="150" width="37.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="M9h-wD-G2H" secondAttribute="trailing" constant="20" id="44R-NQ-hxH"/>
                                             <constraint firstItem="M9h-wD-G2H" firstAttribute="leading" secondItem="7Bf-fp-lRB" secondAttribute="trailing" constant="20" id="4eV-WM-AEj"/>
                                             <constraint firstItem="z45-YT-Hpu" firstAttribute="top" secondItem="oJI-Y1-int" secondAttribute="top" constant="8" id="7Tt-x8-OCC"/>
+                                            <constraint firstItem="iJz-wn-6af" firstAttribute="leading" secondItem="oJI-Y1-int" secondAttribute="leading" constant="8" id="87F-HO-xPI"/>
+                                            <constraint firstItem="d5q-KG-4LO" firstAttribute="top" secondItem="1kO-IE-2qp" secondAttribute="bottom" constant="8" id="EDz-0f-eMX"/>
                                             <constraint firstItem="z45-YT-Hpu" firstAttribute="leading" secondItem="oJI-Y1-int" secondAttribute="leading" constant="8" id="EOi-eR-sgo"/>
+                                            <constraint firstItem="cqA-sC-nt0" firstAttribute="top" secondItem="d5q-KG-4LO" secondAttribute="bottom" constant="8" id="IQi-7q-oHo"/>
                                             <constraint firstItem="M9h-wD-G2H" firstAttribute="baseline" secondItem="7Bf-fp-lRB" secondAttribute="baseline" id="Mgi-Gd-z2j"/>
-                                            <constraint firstAttribute="height" constant="150" id="hSa-kj-zCX"/>
+                                            <constraint firstItem="1kO-IE-2qp" firstAttribute="top" secondItem="8W2-Qz-gDD" secondAttribute="bottom" constant="8" id="NbO-jl-uEt"/>
+                                            <constraint firstItem="1kO-IE-2qp" firstAttribute="leading" secondItem="oJI-Y1-int" secondAttribute="leading" constant="8" id="NyI-3f-nz6"/>
+                                            <constraint firstItem="iJz-wn-6af" firstAttribute="top" secondItem="z45-YT-Hpu" secondAttribute="bottom" constant="20" id="PPP-sT-fpS"/>
+                                            <constraint firstItem="8W2-Qz-gDD" firstAttribute="top" secondItem="iJz-wn-6af" secondAttribute="bottom" constant="8" id="XRT-F5-Yjc"/>
+                                            <constraint firstItem="d5q-KG-4LO" firstAttribute="leading" secondItem="oJI-Y1-int" secondAttribute="leading" constant="8" id="ggY-I0-M7g"/>
+                                            <constraint firstAttribute="height" constant="50" id="hSa-kj-zCX"/>
                                             <constraint firstItem="M9h-wD-G2H" firstAttribute="top" secondItem="oJI-Y1-int" secondAttribute="top" constant="8" id="iBb-BN-bfz"/>
-                                            <constraint firstAttribute="trailing" secondItem="Qgf-TM-IEy" secondAttribute="trailing" constant="8" id="jjc-K2-k1X"/>
-                                            <constraint firstItem="Qgf-TM-IEy" firstAttribute="leading" secondItem="oJI-Y1-int" secondAttribute="leading" constant="8" id="mQp-ja-tWj"/>
-                                            <constraint firstItem="Qgf-TM-IEy" firstAttribute="top" secondItem="7Bf-fp-lRB" secondAttribute="bottom" constant="8" id="n8a-nO-S0x"/>
-                                            <constraint firstAttribute="bottom" secondItem="Qgf-TM-IEy" secondAttribute="bottom" constant="8" id="vJz-jQ-XOv"/>
+                                            <constraint firstItem="cqA-sC-nt0" firstAttribute="leading" secondItem="oJI-Y1-int" secondAttribute="leading" constant="8" id="vrY-2g-lQg"/>
                                             <constraint firstItem="7Bf-fp-lRB" firstAttribute="top" secondItem="oJI-Y1-int" secondAttribute="top" constant="8" id="wCA-eJ-EqO"/>
+                                            <constraint firstItem="8W2-Qz-gDD" firstAttribute="leading" secondItem="oJI-Y1-int" secondAttribute="leading" constant="8" id="zmy-oE-jfZ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -852,9 +885,15 @@ Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="iJz-wn-6af" id="jXt-Uy-QVy"/>
                         <outlet property="bottomView" destination="oJI-Y1-int" id="eZx-ip-yAM"/>
                         <outlet property="bottomViewHeightContstraight" destination="hSa-kj-zCX" id="BMp-WY-cVk"/>
+                        <outlet property="emailLabel" destination="cqA-sC-nt0" id="GFX-Ji-0aX"/>
+                        <outlet property="lattitudeLabel" destination="1kO-IE-2qp" id="fwQ-04-dyK"/>
+                        <outlet property="longtitudeLabel" destination="d5q-KG-4LO" id="Jz1-m9-4LF"/>
+                        <outlet property="mainBottomLabel" destination="z45-YT-Hpu" id="uqH-kq-ckv"/>
                         <outlet property="mapView" destination="xpf-5l-kdv" id="GUF-P9-Dgl"/>
+                        <outlet property="postCodeLabel" destination="8W2-Qz-gDD" id="6aH-BW-0Ib"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8G-CG-gyL" userLabel="First Responder" sceneMemberID="firstResponder"/>

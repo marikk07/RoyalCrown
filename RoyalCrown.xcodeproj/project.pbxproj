@@ -16,6 +16,10 @@
 		562540411F10BE0400C38A0C /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5625403F1F10BE0400C38A0C /* PhotoCell.xib */; };
 		567A25CD1F12043B004D3AC1 /* PhotoCellWithCancell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A25CB1F12043B004D3AC1 /* PhotoCellWithCancell.swift */; };
 		567A25CE1F12043B004D3AC1 /* PhotoCellWithCancell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 567A25CC1F12043B004D3AC1 /* PhotoCellWithCancell.xib */; };
+		567A25D11F1222DD004D3AC1 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A25D01F1222DD004D3AC1 /* RestManager.swift */; };
+		567A25D31F12394E004D3AC1 /* RestConstatns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A25D21F12394E004D3AC1 /* RestConstatns.swift */; };
+		567A25D61F12700D004D3AC1 /* BranchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A25D51F12700D004D3AC1 /* BranchModel.swift */; };
+		56B30B491F1347B900D11341 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B481F1347B900D11341 /* Marker.swift */; };
 		56C4A4381F0AA80D008E9867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4A4371F0AA80D008E9867 /* AppDelegate.swift */; };
 		56C4A43D1F0AA80D008E9867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C4A43B1F0AA80D008E9867 /* Main.storyboard */; };
 		56C4A43F1F0AA80D008E9867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C4A43E1F0AA80D008E9867 /* Assets.xcassets */; };
@@ -28,7 +32,6 @@
 		56C4A4761F0C18E7008E9867 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4A4751F0C18E7008E9867 /* AlertHelper.swift */; };
 		56C4A4791F0C9319008E9867 /* AboutRoyalAssistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4A4781F0C9319008E9867 /* AboutRoyalAssistViewController.swift */; };
 		56C9EDA91F0C9CA10080A4D8 /* AccidentReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9EDA81F0C9CA10080A4D8 /* AccidentReportViewController.swift */; };
-		56C9EDAB1F0CA52C0080A4D8 /* AccidentReportPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9EDAA1F0CA52C0080A4D8 /* AccidentReportPhotoCell.swift */; };
 		56C9EDAE1F0CE4560080A4D8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9EDAD1F0CE4560080A4D8 /* AboutViewController.swift */; };
 		56C9EDB11F0CFB0C0080A4D8 /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9EDB01F0CFB0C0080A4D8 /* GoogleMapViewController.swift */; };
 		56C9EDB71F0DEE120080A4D8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9EDB61F0DEE120080A4D8 /* CameraViewController.swift */; };
@@ -61,6 +64,10 @@
 		5625403F1F10BE0400C38A0C /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoCell.xib; path = Cells/PhotoCell.xib; sourceTree = "<group>"; };
 		567A25CB1F12043B004D3AC1 /* PhotoCellWithCancell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCellWithCancell.swift; path = Cells/PhotoCellWithCancell.swift; sourceTree = "<group>"; };
 		567A25CC1F12043B004D3AC1 /* PhotoCellWithCancell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoCellWithCancell.xib; path = Cells/PhotoCellWithCancell.xib; sourceTree = "<group>"; };
+		567A25D01F1222DD004D3AC1 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestManager.swift; path = Rest/RestManager.swift; sourceTree = "<group>"; };
+		567A25D21F12394E004D3AC1 /* RestConstatns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestConstatns.swift; path = Rest/RestConstatns.swift; sourceTree = "<group>"; };
+		567A25D51F12700D004D3AC1 /* BranchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BranchModel.swift; path = Models/BranchModel.swift; sourceTree = "<group>"; };
+		56B30B481F1347B900D11341 /* Marker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Marker.swift; path = Models/Marker.swift; sourceTree = "<group>"; };
 		56C4A4341F0AA80D008E9867 /* RoyalCrown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoyalCrown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C4A4371F0AA80D008E9867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C4A43C1F0AA80D008E9867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,7 +86,6 @@
 		56C4A4751F0C18E7008E9867 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertHelper.swift; path = OtherClass/AlertHelper.swift; sourceTree = "<group>"; };
 		56C4A4781F0C9319008E9867 /* AboutRoyalAssistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutRoyalAssistViewController.swift; path = AboutRoyalAssist/AboutRoyalAssistViewController.swift; sourceTree = "<group>"; };
 		56C9EDA81F0C9CA10080A4D8 /* AccidentReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccidentReportViewController.swift; path = AccidentReportVC/AccidentReportViewController.swift; sourceTree = "<group>"; };
-		56C9EDAA1F0CA52C0080A4D8 /* AccidentReportPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccidentReportPhotoCell.swift; path = AccidentReportVC/AccidentReportPhotoCell.swift; sourceTree = "<group>"; };
 		56C9EDAD1F0CE4560080A4D8 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = AboutVC/AboutViewController.swift; sourceTree = "<group>"; };
 		56C9EDB01F0CFB0C0080A4D8 /* GoogleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleMapViewController.swift; path = GoogleMapVC/GoogleMapViewController.swift; sourceTree = "<group>"; };
 		56C9EDB61F0DEE120080A4D8 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = CameraVC/CameraViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +172,24 @@
 			name = PhotoCellWithCancell;
 			sourceTree = "<group>";
 		};
+		567A25CF1F1221D6004D3AC1 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				567A25D01F1222DD004D3AC1 /* RestManager.swift */,
+				567A25D21F12394E004D3AC1 /* RestConstatns.swift */,
+			);
+			name = Rest;
+			sourceTree = "<group>";
+		};
+		567A25D41F12528D004D3AC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				567A25D51F12700D004D3AC1 /* BranchModel.swift */,
+				56B30B481F1347B900D11341 /* Marker.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		56C4A42B1F0AA80D008E9867 = {
 			isa = PBXGroup;
 			children = (
@@ -191,9 +215,10 @@
 		56C4A4361F0AA80D008E9867 /* RoyalCrown */ = {
 			isa = PBXGroup;
 			children = (
+				567A25D41F12528D004D3AC1 /* Models */,
 				562540391F10B94700C38A0C /* Cells */,
 				56C4A46E1F0ABD69008E9867 /* OtherClasses */,
-				56C9EDB21F0D17480080A4D8 /* Views */,
+				567A25CF1F1221D6004D3AC1 /* Rest */,
 				56C4A4681F0AAD0C008E9867 /* ViewControllers */,
 				56C4A4371F0AA80D008E9867 /* AppDelegate.swift */,
 				56C4A43B1F0AA80D008E9867 /* Main.storyboard */,
@@ -281,7 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				56C9EDA81F0C9CA10080A4D8 /* AccidentReportViewController.swift */,
-				56C9EDAA1F0CA52C0080A4D8 /* AccidentReportPhotoCell.swift */,
 			);
 			name = AccidentReportVC;
 			sourceTree = "<group>";
@@ -302,27 +326,12 @@
 			name = GoogleMapVC;
 			sourceTree = "<group>";
 		};
-		56C9EDB21F0D17480080A4D8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				56C9EDBD1F0F983F0080A4D8 /* BottomView */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		56C9EDB51F0DEDF30080A4D8 /* CameraVC */ = {
 			isa = PBXGroup;
 			children = (
 				56C9EDB61F0DEE120080A4D8 /* CameraViewController.swift */,
 			);
 			name = CameraVC;
-			sourceTree = "<group>";
-		};
-		56C9EDBD1F0F983F0080A4D8 /* BottomView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = BottomView;
 			sourceTree = "<group>";
 		};
 		6D29105286458112BA27AF68 /* Pods */ = {
@@ -628,13 +637,16 @@
 				56C4A4791F0C9319008E9867 /* AboutRoyalAssistViewController.swift in Sources */,
 				56C4A4761F0C18E7008E9867 /* AlertHelper.swift in Sources */,
 				56C4A4711F0B5333008E9867 /* RoyalAssistViewController.swift in Sources */,
+				567A25D11F1222DD004D3AC1 /* RestManager.swift in Sources */,
 				567A25CD1F12043B004D3AC1 /* PhotoCellWithCancell.swift in Sources */,
+				56B30B491F1347B900D11341 /* Marker.swift in Sources */,
 				56C9EDB71F0DEE120080A4D8 /* CameraViewController.swift in Sources */,
-				56C9EDAB1F0CA52C0080A4D8 /* AccidentReportPhotoCell.swift in Sources */,
 				562540371F10B29C00C38A0C /* MainCell.swift in Sources */,
 				562540401F10BE0400C38A0C /* PhotoCell.swift in Sources */,
 				56C4A4381F0AA80D008E9867 /* AppDelegate.swift in Sources */,
 				56C4A46D1F0ABD5C008E9867 /* Constants.swift in Sources */,
+				567A25D31F12394E004D3AC1 /* RestConstatns.swift in Sources */,
+				567A25D61F12700D004D3AC1 /* BranchModel.swift in Sources */,
 				56C4A4661F0AACE3008E9867 /* HomeScreenViewController.swift in Sources */,
 				56C9EDAE1F0CE4560080A4D8 /* AboutViewController.swift in Sources */,
 				56C9EDB11F0CFB0C0080A4D8 /* GoogleMapViewController.swift in Sources */,

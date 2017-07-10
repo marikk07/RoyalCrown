@@ -12,9 +12,9 @@ class AboutViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     @IBOutlet weak var homeCollectionView: UICollectionView!
     
-    let cellCount = 3
-    let cellsImgArry = ["royal_assist_image","royal_payment_image","services_image"]
-    let cellsTitlesArray = ["ABOUT US", "BRANCHES", "E-NSURED"]
+  private  let cellCount = 3
+  private  let cellsImgArry = ["royal_assist_image","royal_payment_image","services_image"]
+  private  let cellsTitlesArray = ["ABOUT US", "BRANCHES", "E-NSURED"]
     
     
     override func viewDidLoad() {
@@ -72,15 +72,6 @@ class AboutViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         return CGSize.init(width: cellWidth, height: cellHeight)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     // MARK - Actions
     
     @IBAction func homeAction(_ sender: Any) {

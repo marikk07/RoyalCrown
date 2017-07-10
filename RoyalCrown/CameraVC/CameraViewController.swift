@@ -16,14 +16,14 @@ protocol CameraDelegate {
 
 
 class CameraViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    @IBOutlet var previewView: UIView!
-    @IBOutlet weak var bottomView: UIView!
-    @IBOutlet weak var viewWithCollection: UIView!
-    @IBOutlet weak var cameraActView: UIView!
-    @IBOutlet weak var captureImageView: UIImageView!
-    @IBOutlet weak var photoCollectionView: UICollectionView!
-    @IBOutlet weak var switchButton: UIButton!
-    @IBOutlet weak var flashButton: UIButton!
+    @IBOutlet private var previewView: UIView!
+    @IBOutlet private weak var bottomView: UIView!
+    @IBOutlet private weak var viewWithCollection: UIView!
+    @IBOutlet private weak var cameraActView: UIView!
+    @IBOutlet private weak var captureImageView: UIImageView!
+    @IBOutlet private weak var photoCollectionView: UICollectionView!
+    @IBOutlet private weak var switchButton: UIButton!
+    @IBOutlet private weak var flashButton: UIButton!
     
     
     private  var assetsFetchResults : PHFetchResult<AnyObject>?

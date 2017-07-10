@@ -21,6 +21,7 @@ class AccidentReportViewController: UIViewController, UICollectionViewDataSource
         photoArray = [UIImage.init(named: "add_photo_icon") as Any]
     }
     
+
     
     // MARK: - UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -74,6 +75,10 @@ class AccidentReportViewController: UIViewController, UICollectionViewDataSource
     }
     @IBAction func backAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+
+    @IBAction func reportAction(_ sender: Any) {
+        
     }
     
     // MARK: CameraDelegate

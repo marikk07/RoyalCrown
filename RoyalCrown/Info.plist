@@ -47,5 +47,9 @@
 	<string>Used to take a photo</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Used to save a photo</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Used to make branch</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your location</string>
 </dict>
 </plist>

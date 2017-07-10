@@ -34,6 +34,6 @@ struct ViewControllersIdentifiers {
 }
 
 struct ConstraightConst {
-    static let mapBottomOpenConst = 150
+    static let mapBottomOpenConst = 170
     static let mapBottomCloseConst = 60
 }
