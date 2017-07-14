@@ -20,6 +20,22 @@
 		567A25D31F12394E004D3AC1 /* RestConstatns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A25D21F12394E004D3AC1 /* RestConstatns.swift */; };
 		567A25D61F12700D004D3AC1 /* BranchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A25D51F12700D004D3AC1 /* BranchModel.swift */; };
 		56B30B491F1347B900D11341 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B481F1347B900D11341 /* Marker.swift */; };
+		56B30B4C1F14D9C800D11341 /* MapBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B4B1F14D9C800D11341 /* MapBottomView.swift */; };
+		56B30B501F14F89B00D11341 /* MapBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B30B4F1F14F89A00D11341 /* MapBottomView.xib */; };
+		56B30B531F175AAF00D11341 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B521F175AAF00D11341 /* QuizViewController.swift */; };
+		56B30B571F175EFD00D11341 /* QuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B551F175EFD00D11341 /* QuizCell.swift */; };
+		56B30B581F175EFD00D11341 /* QuizCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B30B561F175EFD00D11341 /* QuizCell.xib */; };
+		56B30B5A1F1772CD00D11341 /* QuestionnaireModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B591F1772CD00D11341 /* QuestionnaireModel.swift */; };
+		56B30B5C1F177B7600D11341 /* QuestionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B5B1F177B7600D11341 /* QuestionTestViewController.swift */; };
+		56B30B611F17852A00D11341 /* TestProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B601F17852A00D11341 /* TestProgressView.swift */; };
+		56B30B631F17854900D11341 /* TestProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B30B621F17854900D11341 /* TestProgressView.xib */; };
+		56B30B661F1787E500D11341 /* TestProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B641F1787E500D11341 /* TestProgressCell.swift */; };
+		56B30B671F1787E500D11341 /* TestProgressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B30B651F1787E500D11341 /* TestProgressCell.xib */; };
+		56B30B6C1F17E6C600D11341 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B6A1F17E6C600D11341 /* AnswerCell.swift */; };
+		56B30B6D1F17E6C600D11341 /* AnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B30B6B1F17E6C600D11341 /* AnswerCell.xib */; };
+		56B30B6F1F1878BD00D11341 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B6E1F1878BD00D11341 /* TestModel.swift */; };
+		56B30B711F1879A600D11341 /* AnswersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B701F1879A600D11341 /* AnswersModel.swift */; };
+		56B30B741F191BED00D11341 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B731F191BED00D11341 /* ResultViewController.swift */; };
 		56C4A4381F0AA80D008E9867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4A4371F0AA80D008E9867 /* AppDelegate.swift */; };
 		56C4A43D1F0AA80D008E9867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C4A43B1F0AA80D008E9867 /* Main.storyboard */; };
 		56C4A43F1F0AA80D008E9867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C4A43E1F0AA80D008E9867 /* Assets.xcassets */; };
@@ -68,6 +84,22 @@
 		567A25D21F12394E004D3AC1 /* RestConstatns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestConstatns.swift; path = Rest/RestConstatns.swift; sourceTree = "<group>"; };
 		567A25D51F12700D004D3AC1 /* BranchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BranchModel.swift; path = Models/BranchModel.swift; sourceTree = "<group>"; };
 		56B30B481F1347B900D11341 /* Marker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Marker.swift; path = Models/Marker.swift; sourceTree = "<group>"; };
+		56B30B4B1F14D9C800D11341 /* MapBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapBottomView.swift; path = Views/MapBottomView/MapBottomView.swift; sourceTree = "<group>"; };
+		56B30B4F1F14F89A00D11341 /* MapBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapBottomView.xib; path = Views/MapBottomView/MapBottomView.xib; sourceTree = "<group>"; };
+		56B30B521F175AAF00D11341 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuizViewController.swift; path = QuizViewController/QuizViewController.swift; sourceTree = "<group>"; };
+		56B30B551F175EFD00D11341 /* QuizCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuizCell.swift; path = QuizCell/QuizCell.swift; sourceTree = "<group>"; };
+		56B30B561F175EFD00D11341 /* QuizCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuizCell.xib; path = QuizCell/QuizCell.xib; sourceTree = "<group>"; };
+		56B30B591F1772CD00D11341 /* QuestionnaireModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireModel.swift; path = Models/QuestionnaireModel.swift; sourceTree = "<group>"; };
+		56B30B5B1F177B7600D11341 /* QuestionTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionTestViewController.swift; path = QuestionTestVC/QuestionTestViewController.swift; sourceTree = "<group>"; };
+		56B30B601F17852A00D11341 /* TestProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestProgressView.swift; path = Views/TestProgressView/TestProgressView.swift; sourceTree = "<group>"; };
+		56B30B621F17854900D11341 /* TestProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestProgressView.xib; path = Views/TestProgressView/TestProgressView.xib; sourceTree = "<group>"; };
+		56B30B641F1787E500D11341 /* TestProgressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestProgressCell.swift; path = Cells/TestProgressCell.swift; sourceTree = "<group>"; };
+		56B30B651F1787E500D11341 /* TestProgressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestProgressCell.xib; path = Cells/TestProgressCell.xib; sourceTree = "<group>"; };
+		56B30B6A1F17E6C600D11341 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswerCell.swift; path = Cells/AnswerCell.swift; sourceTree = "<group>"; };
+		56B30B6B1F17E6C600D11341 /* AnswerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnswerCell.xib; path = Cells/AnswerCell.xib; sourceTree = "<group>"; };
+		56B30B6E1F1878BD00D11341 /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestModel.swift; path = Models/TestModel.swift; sourceTree = "<group>"; };
+		56B30B701F1879A600D11341 /* AnswersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswersModel.swift; path = Models/AnswersModel.swift; sourceTree = "<group>"; };
+		56B30B731F191BED00D11341 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = ResultVC/ResultViewController.swift; sourceTree = "<group>"; };
 		56C4A4341F0AA80D008E9867 /* RoyalCrown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoyalCrown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C4A4371F0AA80D008E9867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C4A43C1F0AA80D008E9867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,9 +170,12 @@
 		562540391F10B94700C38A0C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				56B30B691F17E69A00D11341 /* AnswerCell */,
+				56B30B541F175E9200D11341 /* QuizCell */,
 				567A25CA1F120416004D3AC1 /* PhotoCellWithCancell */,
 				5625403B1F10B96800C38A0C /* PhotoCell */,
 				5625403A1F10B95600C38A0C /* MainCell */,
+				56B30B681F1787EC00D11341 /* TestProgressCell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -186,8 +221,89 @@
 			children = (
 				567A25D51F12700D004D3AC1 /* BranchModel.swift */,
 				56B30B481F1347B900D11341 /* Marker.swift */,
+				56B30B591F1772CD00D11341 /* QuestionnaireModel.swift */,
+				56B30B6E1F1878BD00D11341 /* TestModel.swift */,
+				56B30B701F1879A600D11341 /* AnswersModel.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		56B30B4A1F14D3FE00D11341 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56B30B5F1F1784DB00D11341 /* TestProgressView */,
+				56B30B5E1F1784CD00D11341 /* MapBottomView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		56B30B511F175A0200D11341 /* QuizVC */ = {
+			isa = PBXGroup;
+			children = (
+				56B30B521F175AAF00D11341 /* QuizViewController.swift */,
+			);
+			name = QuizVC;
+			sourceTree = "<group>";
+		};
+		56B30B541F175E9200D11341 /* QuizCell */ = {
+			isa = PBXGroup;
+			children = (
+				56B30B551F175EFD00D11341 /* QuizCell.swift */,
+				56B30B561F175EFD00D11341 /* QuizCell.xib */,
+			);
+			name = QuizCell;
+			sourceTree = "<group>";
+		};
+		56B30B5D1F177B7E00D11341 /* QuestionTestVC */ = {
+			isa = PBXGroup;
+			children = (
+				56B30B5B1F177B7600D11341 /* QuestionTestViewController.swift */,
+			);
+			name = QuestionTestVC;
+			sourceTree = "<group>";
+		};
+		56B30B5E1F1784CD00D11341 /* MapBottomView */ = {
+			isa = PBXGroup;
+			children = (
+				56B30B4F1F14F89A00D11341 /* MapBottomView.xib */,
+				56B30B4B1F14D9C800D11341 /* MapBottomView.swift */,
+			);
+			name = MapBottomView;
+			sourceTree = "<group>";
+		};
+		56B30B5F1F1784DB00D11341 /* TestProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				56B30B601F17852A00D11341 /* TestProgressView.swift */,
+				56B30B621F17854900D11341 /* TestProgressView.xib */,
+			);
+			name = TestProgressView;
+			sourceTree = "<group>";
+		};
+		56B30B681F1787EC00D11341 /* TestProgressCell */ = {
+			isa = PBXGroup;
+			children = (
+				56B30B641F1787E500D11341 /* TestProgressCell.swift */,
+				56B30B651F1787E500D11341 /* TestProgressCell.xib */,
+			);
+			name = TestProgressCell;
+			sourceTree = "<group>";
+		};
+		56B30B691F17E69A00D11341 /* AnswerCell */ = {
+			isa = PBXGroup;
+			children = (
+				56B30B6A1F17E6C600D11341 /* AnswerCell.swift */,
+				56B30B6B1F17E6C600D11341 /* AnswerCell.xib */,
+			);
+			name = AnswerCell;
+			sourceTree = "<group>";
+		};
+		56B30B721F191BB100D11341 /* ResultVC */ = {
+			isa = PBXGroup;
+			children = (
+				56B30B731F191BED00D11341 /* ResultViewController.swift */,
+			);
+			name = ResultVC;
 			sourceTree = "<group>";
 		};
 		56C4A42B1F0AA80D008E9867 = {
@@ -215,11 +331,13 @@
 		56C4A4361F0AA80D008E9867 /* RoyalCrown */ = {
 			isa = PBXGroup;
 			children = (
+				56B30B4A1F14D3FE00D11341 /* Views */,
 				567A25D41F12528D004D3AC1 /* Models */,
 				562540391F10B94700C38A0C /* Cells */,
 				56C4A46E1F0ABD69008E9867 /* OtherClasses */,
 				567A25CF1F1221D6004D3AC1 /* Rest */,
 				56C4A4681F0AAD0C008E9867 /* ViewControllers */,
+				56B30B721F191BB100D11341 /* ResultVC */,
 				56C4A4371F0AA80D008E9867 /* AppDelegate.swift */,
 				56C4A43B1F0AA80D008E9867 /* Main.storyboard */,
 				56C4A4671F0AACF6008E9867 /* Other */,
@@ -258,6 +376,7 @@
 		56C4A4681F0AAD0C008E9867 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				56B30B511F175A0200D11341 /* QuizVC */,
 				56C9EDB51F0DEDF30080A4D8 /* CameraVC */,
 				56C9EDAF1F0CFAE30080A4D8 /* GoogleMapVC */,
 				56C9EDAC1F0CE4370080A4D8 /* AboutVC */,
@@ -265,6 +384,7 @@
 				56C4A4771F0C92E2008E9867 /* AboutRoyalAssistVC */,
 				56C4A46F1F0B52E8008E9867 /* RoyalAssistVC */,
 				56C4A4691F0AB619008E9867 /* HomeVC */,
+				56B30B5D1F177B7E00D11341 /* QuestionTestVC */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -466,11 +586,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B30B671F1787E500D11341 /* TestProgressCell.xib in Resources */,
+				56B30B501F14F89B00D11341 /* MapBottomView.xib in Resources */,
 				56C4A4421F0AA80D008E9867 /* LaunchScreen.storyboard in Resources */,
 				56C4A43F1F0AA80D008E9867 /* Assets.xcassets in Resources */,
 				562540381F10B29C00C38A0C /* MainCell.xib in Resources */,
 				567A25CE1F12043B004D3AC1 /* PhotoCellWithCancell.xib in Resources */,
+				56B30B631F17854900D11341 /* TestProgressView.xib in Resources */,
 				56C4A43D1F0AA80D008E9867 /* Main.storyboard in Resources */,
+				56B30B6D1F17E6C600D11341 /* AnswerCell.xib in Resources */,
+				56B30B581F175EFD00D11341 /* QuizCell.xib in Resources */,
 				562540411F10BE0400C38A0C /* PhotoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,17 +764,28 @@
 				56C4A4711F0B5333008E9867 /* RoyalAssistViewController.swift in Sources */,
 				567A25D11F1222DD004D3AC1 /* RestManager.swift in Sources */,
 				567A25CD1F12043B004D3AC1 /* PhotoCellWithCancell.swift in Sources */,
+				56B30B6F1F1878BD00D11341 /* TestModel.swift in Sources */,
 				56B30B491F1347B900D11341 /* Marker.swift in Sources */,
+				56B30B661F1787E500D11341 /* TestProgressCell.swift in Sources */,
+				56B30B4C1F14D9C800D11341 /* MapBottomView.swift in Sources */,
 				56C9EDB71F0DEE120080A4D8 /* CameraViewController.swift in Sources */,
+				56B30B531F175AAF00D11341 /* QuizViewController.swift in Sources */,
 				562540371F10B29C00C38A0C /* MainCell.swift in Sources */,
 				562540401F10BE0400C38A0C /* PhotoCell.swift in Sources */,
 				56C4A4381F0AA80D008E9867 /* AppDelegate.swift in Sources */,
 				56C4A46D1F0ABD5C008E9867 /* Constants.swift in Sources */,
+				56B30B5A1F1772CD00D11341 /* QuestionnaireModel.swift in Sources */,
 				567A25D31F12394E004D3AC1 /* RestConstatns.swift in Sources */,
 				567A25D61F12700D004D3AC1 /* BranchModel.swift in Sources */,
 				56C4A4661F0AACE3008E9867 /* HomeScreenViewController.swift in Sources */,
 				56C9EDAE1F0CE4560080A4D8 /* AboutViewController.swift in Sources */,
+				56B30B6C1F17E6C600D11341 /* AnswerCell.swift in Sources */,
+				56B30B5C1F177B7600D11341 /* QuestionTestViewController.swift in Sources */,
+				56B30B711F1879A600D11341 /* AnswersModel.swift in Sources */,
+				56B30B741F191BED00D11341 /* ResultViewController.swift in Sources */,
 				56C9EDB11F0CFB0C0080A4D8 /* GoogleMapViewController.swift in Sources */,
+				56B30B571F175EFD00D11341 /* QuizCell.swift in Sources */,
+				56B30B611F17852A00D11341 /* TestProgressView.swift in Sources */,
 				56C9EDA91F0C9CA10080A4D8 /* AccidentReportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

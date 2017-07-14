@@ -12,4 +12,6 @@ import GoogleMaps
 class Marker: GMSMarker {
     var  branchModel : BranchModel!
     
+    
+    
 }

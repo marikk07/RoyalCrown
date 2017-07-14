@@ -19,18 +19,22 @@ class BranchModel: NSObject {
     var address : String?
     var phone : String?
     var email : String?
+    var fax : String?
     var postal_code : String?
     var latitude : Double?
     var longitude : Double?
     
     init?(json: JSON){
-        uid = json["uid"].string
-        title = json["title"].string
-        address = json["address"].string
-        phone = json["phone"].string
-        postal_code = json["postal_code"].string
-        latitude = json["latitude"].double
-        longitude = json["longitude"].double
+        uid             = json["uid"].string
+        title           = json["title"].string
+        address         = json["address"].string
+        phone           = json["phone"].string
+        postal_code     = json["postal_code"].string
+        latitude        = json["latitude"].double
+        longitude       = json["longitude"].double
+        fax             = json["fax"].string
+        email           = json["email"].string
+
     }
     
 //    init(withJson:Dictionary<AnyHashable, Any>) {

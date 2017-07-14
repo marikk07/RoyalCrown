@@ -28,7 +28,10 @@ struct RestRequstsConstants {
     static let contacts                 = "contacts"
 }
 
-
+struct MapsPath {
+    
+    static let baseUrl = "https://maps.googleapis.com/maps/api/directions/json?origin="
+}
 
 // MARK: MessageType
 

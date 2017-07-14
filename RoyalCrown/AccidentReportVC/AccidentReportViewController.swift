@@ -12,30 +12,30 @@ class AccidentReportViewController: UIViewController, UICollectionViewDataSource
     
     @IBOutlet weak var photoCollectionView: UICollectionView!
     
-    private var photoArray : NSMutableArray = []
+    private var arrayPhotos : [Any] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         registCellsNib()
-        photoArray = [UIImage.init(named: "add_photo_icon") as Any]
+        arrayPhotos = [UIImage.init(named: "add_photo_icon") as Any]
     }
     
 
     
     // MARK: - UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photoArray.count
+        return arrayPhotos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == 0 {
             let cell: PhotoCell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifiers.photoCell, for: indexPath) as! PhotoCell
-            cell.setUpWithImage(image: photoArray[indexPath.row] as! UIImage)
+            cell.setUpWithImage(image: arrayPhotos[indexPath.row] as! UIImage)
             return cell
         }else{
             let cell: PhotoCellWithCancell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifiers.photoCellWithCancell, for: indexPath) as! PhotoCellWithCancell
-            cell.setUpWithImage(image: photoArray[indexPath.row] as! UIImage)
+            cell.setUpWithImage(image: arrayPhotos[indexPath.row] as! UIImage)
             return cell
         }
     }
@@ -61,7 +61,7 @@ class AccidentReportViewController: UIViewController, UICollectionViewDataSource
             vc.delegate = self
             self.present(vc, animated: true, completion: nil)
         }else{
-            photoArray.removeObject(at: indexPath.row)
+            arrayPhotos.remove(at: indexPath.row)
             photoCollectionView.reloadData()
         }
     }
@@ -83,8 +83,8 @@ class AccidentReportViewController: UIViewController, UICollectionViewDataSource
     
     // MARK: CameraDelegate
     
-    func fetchPhotos(photosArray: NSArray) {
-        photoArray.addObjects(from: photosArray as! [Any])
+    func fetchPhotos(photosArray: [Any]) {
+        arrayPhotos = arrayPhotos + photosArray
         photoCollectionView.reloadData()
     }
     
