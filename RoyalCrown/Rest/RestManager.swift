@@ -92,10 +92,9 @@ class RestManager {
             (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar : [JSON] = [JSON(responseData.result.value!)]
-                print(swiftyJsonVar)
+                let result = QuestionnaireResults.init(json: swiftyJsonVar.first!)
 
-                
-                completionHandler(swiftyJsonVar, nil)
+                completionHandler(result, nil)
                 
             }
         }

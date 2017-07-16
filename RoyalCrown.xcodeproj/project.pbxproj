@@ -19,6 +19,11 @@
 		567A25D11F1222DD004D3AC1 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A25D01F1222DD004D3AC1 /* RestManager.swift */; };
 		567A25D31F12394E004D3AC1 /* RestConstatns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A25D21F12394E004D3AC1 /* RestConstatns.swift */; };
 		567A25D61F12700D004D3AC1 /* BranchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A25D51F12700D004D3AC1 /* BranchModel.swift */; };
+		568019E11F1A0E9B00798EB0 /* ReviewAnswersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019DF1F1A0E9B00798EB0 /* ReviewAnswersCell.swift */; };
+		568019E21F1A0E9B00798EB0 /* ReviewAnswersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568019E01F1A0E9B00798EB0 /* ReviewAnswersCell.xib */; };
+		568019E51F1A101000798EB0 /* ReviewAnswersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019E41F1A101000798EB0 /* ReviewAnswersViewController.swift */; };
+		568019E91F1B3B3500798EB0 /* TryAgainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019E71F1B3B3500798EB0 /* TryAgainCell.swift */; };
+		568019EA1F1B3B3500798EB0 /* TryAgainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568019E81F1B3B3500798EB0 /* TryAgainCell.xib */; };
 		56B30B491F1347B900D11341 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B481F1347B900D11341 /* Marker.swift */; };
 		56B30B4C1F14D9C800D11341 /* MapBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B4B1F14D9C800D11341 /* MapBottomView.swift */; };
 		56B30B501F14F89B00D11341 /* MapBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B30B4F1F14F89A00D11341 /* MapBottomView.xib */; };
@@ -36,6 +41,7 @@
 		56B30B6F1F1878BD00D11341 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B6E1F1878BD00D11341 /* TestModel.swift */; };
 		56B30B711F1879A600D11341 /* AnswersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B701F1879A600D11341 /* AnswersModel.swift */; };
 		56B30B741F191BED00D11341 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B731F191BED00D11341 /* ResultViewController.swift */; };
+		56B30B761F19F8EF00D11341 /* QuestionnaireResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B751F19F8EF00D11341 /* QuestionnaireResults.swift */; };
 		56C4A4381F0AA80D008E9867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4A4371F0AA80D008E9867 /* AppDelegate.swift */; };
 		56C4A43D1F0AA80D008E9867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C4A43B1F0AA80D008E9867 /* Main.storyboard */; };
 		56C4A43F1F0AA80D008E9867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C4A43E1F0AA80D008E9867 /* Assets.xcassets */; };
@@ -83,6 +89,11 @@
 		567A25D01F1222DD004D3AC1 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestManager.swift; path = Rest/RestManager.swift; sourceTree = "<group>"; };
 		567A25D21F12394E004D3AC1 /* RestConstatns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestConstatns.swift; path = Rest/RestConstatns.swift; sourceTree = "<group>"; };
 		567A25D51F12700D004D3AC1 /* BranchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BranchModel.swift; path = Models/BranchModel.swift; sourceTree = "<group>"; };
+		568019DF1F1A0E9B00798EB0 /* ReviewAnswersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewAnswersCell.swift; path = Cells/ReviewAnswersCell.swift; sourceTree = "<group>"; };
+		568019E01F1A0E9B00798EB0 /* ReviewAnswersCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReviewAnswersCell.xib; path = Cells/ReviewAnswersCell.xib; sourceTree = "<group>"; };
+		568019E41F1A101000798EB0 /* ReviewAnswersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewAnswersViewController.swift; path = ReviewAnswersVC/ReviewAnswersViewController.swift; sourceTree = "<group>"; };
+		568019E71F1B3B3500798EB0 /* TryAgainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TryAgainCell.swift; path = Cells/TryAgainCell.swift; sourceTree = "<group>"; };
+		568019E81F1B3B3500798EB0 /* TryAgainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TryAgainCell.xib; path = Cells/TryAgainCell.xib; sourceTree = "<group>"; };
 		56B30B481F1347B900D11341 /* Marker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Marker.swift; path = Models/Marker.swift; sourceTree = "<group>"; };
 		56B30B4B1F14D9C800D11341 /* MapBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapBottomView.swift; path = Views/MapBottomView/MapBottomView.swift; sourceTree = "<group>"; };
 		56B30B4F1F14F89A00D11341 /* MapBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapBottomView.xib; path = Views/MapBottomView/MapBottomView.xib; sourceTree = "<group>"; };
@@ -100,6 +111,7 @@
 		56B30B6E1F1878BD00D11341 /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestModel.swift; path = Models/TestModel.swift; sourceTree = "<group>"; };
 		56B30B701F1879A600D11341 /* AnswersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswersModel.swift; path = Models/AnswersModel.swift; sourceTree = "<group>"; };
 		56B30B731F191BED00D11341 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = ResultVC/ResultViewController.swift; sourceTree = "<group>"; };
+		56B30B751F19F8EF00D11341 /* QuestionnaireResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireResults.swift; path = Models/QuestionnaireResults.swift; sourceTree = "<group>"; };
 		56C4A4341F0AA80D008E9867 /* RoyalCrown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoyalCrown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C4A4371F0AA80D008E9867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C4A43C1F0AA80D008E9867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,6 +182,8 @@
 		562540391F10B94700C38A0C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				568019E61F1B3B0900798EB0 /* TryAgainCell */,
+				568019DE1F1A0E6900798EB0 /* ReviewAnswersCell */,
 				56B30B691F17E69A00D11341 /* AnswerCell */,
 				56B30B541F175E9200D11341 /* QuizCell */,
 				567A25CA1F120416004D3AC1 /* PhotoCellWithCancell */,
@@ -224,8 +238,35 @@
 				56B30B591F1772CD00D11341 /* QuestionnaireModel.swift */,
 				56B30B6E1F1878BD00D11341 /* TestModel.swift */,
 				56B30B701F1879A600D11341 /* AnswersModel.swift */,
+				56B30B751F19F8EF00D11341 /* QuestionnaireResults.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		568019DE1F1A0E6900798EB0 /* ReviewAnswersCell */ = {
+			isa = PBXGroup;
+			children = (
+				568019DF1F1A0E9B00798EB0 /* ReviewAnswersCell.swift */,
+				568019E01F1A0E9B00798EB0 /* ReviewAnswersCell.xib */,
+			);
+			name = ReviewAnswersCell;
+			sourceTree = "<group>";
+		};
+		568019E31F1A0FC100798EB0 /* ReviewAnswersVC */ = {
+			isa = PBXGroup;
+			children = (
+				568019E41F1A101000798EB0 /* ReviewAnswersViewController.swift */,
+			);
+			name = ReviewAnswersVC;
+			sourceTree = "<group>";
+		};
+		568019E61F1B3B0900798EB0 /* TryAgainCell */ = {
+			isa = PBXGroup;
+			children = (
+				568019E71F1B3B3500798EB0 /* TryAgainCell.swift */,
+				568019E81F1B3B3500798EB0 /* TryAgainCell.xib */,
+			);
+			name = TryAgainCell;
 			sourceTree = "<group>";
 		};
 		56B30B4A1F14D3FE00D11341 /* Views */ = {
@@ -337,7 +378,6 @@
 				56C4A46E1F0ABD69008E9867 /* OtherClasses */,
 				567A25CF1F1221D6004D3AC1 /* Rest */,
 				56C4A4681F0AAD0C008E9867 /* ViewControllers */,
-				56B30B721F191BB100D11341 /* ResultVC */,
 				56C4A4371F0AA80D008E9867 /* AppDelegate.swift */,
 				56C4A43B1F0AA80D008E9867 /* Main.storyboard */,
 				56C4A4671F0AACF6008E9867 /* Other */,
@@ -376,6 +416,8 @@
 		56C4A4681F0AAD0C008E9867 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				568019E31F1A0FC100798EB0 /* ReviewAnswersVC */,
+				56B30B721F191BB100D11341 /* ResultVC */,
 				56B30B511F175A0200D11341 /* QuizVC */,
 				56C9EDB51F0DEDF30080A4D8 /* CameraVC */,
 				56C9EDAF1F0CFAE30080A4D8 /* GoogleMapVC */,
@@ -591,12 +633,14 @@
 				56C4A4421F0AA80D008E9867 /* LaunchScreen.storyboard in Resources */,
 				56C4A43F1F0AA80D008E9867 /* Assets.xcassets in Resources */,
 				562540381F10B29C00C38A0C /* MainCell.xib in Resources */,
+				568019EA1F1B3B3500798EB0 /* TryAgainCell.xib in Resources */,
 				567A25CE1F12043B004D3AC1 /* PhotoCellWithCancell.xib in Resources */,
 				56B30B631F17854900D11341 /* TestProgressView.xib in Resources */,
 				56C4A43D1F0AA80D008E9867 /* Main.storyboard in Resources */,
 				56B30B6D1F17E6C600D11341 /* AnswerCell.xib in Resources */,
 				56B30B581F175EFD00D11341 /* QuizCell.xib in Resources */,
 				562540411F10BE0400C38A0C /* PhotoCell.xib in Resources */,
+				568019E21F1A0E9B00798EB0 /* ReviewAnswersCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,7 +812,10 @@
 				56B30B491F1347B900D11341 /* Marker.swift in Sources */,
 				56B30B661F1787E500D11341 /* TestProgressCell.swift in Sources */,
 				56B30B4C1F14D9C800D11341 /* MapBottomView.swift in Sources */,
+				56B30B761F19F8EF00D11341 /* QuestionnaireResults.swift in Sources */,
 				56C9EDB71F0DEE120080A4D8 /* CameraViewController.swift in Sources */,
+				568019E11F1A0E9B00798EB0 /* ReviewAnswersCell.swift in Sources */,
+				568019E91F1B3B3500798EB0 /* TryAgainCell.swift in Sources */,
 				56B30B531F175AAF00D11341 /* QuizViewController.swift in Sources */,
 				562540371F10B29C00C38A0C /* MainCell.swift in Sources */,
 				562540401F10BE0400C38A0C /* PhotoCell.swift in Sources */,
@@ -776,6 +823,7 @@
 				56C4A46D1F0ABD5C008E9867 /* Constants.swift in Sources */,
 				56B30B5A1F1772CD00D11341 /* QuestionnaireModel.swift in Sources */,
 				567A25D31F12394E004D3AC1 /* RestConstatns.swift in Sources */,
+				568019E51F1A101000798EB0 /* ReviewAnswersViewController.swift in Sources */,
 				567A25D61F12700D004D3AC1 /* BranchModel.swift in Sources */,
 				56C4A4661F0AACE3008E9867 /* HomeScreenViewController.swift in Sources */,
 				56C9EDAE1F0CE4560080A4D8 /* AboutViewController.swift in Sources */,

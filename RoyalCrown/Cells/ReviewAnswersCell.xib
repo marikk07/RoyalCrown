@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReviewAnswersCell" id="gTV-IL-0wX" customClass="ReviewAnswersCell" customModule="RoyalCrown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="247" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="247" height="105"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxj-Wf-uWJ">
+                        <rect key="frame" x="8" y="8" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.18823529410000001" green="0.16862745100000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Inh-So-qYG">
+                        <rect key="frame" x="8" y="33" width="231" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.18823529410000001" green="0.16862745100000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dr5-ok-vd4">
+                        <rect key="frame" x="8" y="58" width="231" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dr5-ok-vd4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="EOG-rw-Fgj"/>
+                <constraint firstItem="dr5-ok-vd4" firstAttribute="top" secondItem="Inh-So-qYG" secondAttribute="bottom" constant="8" id="GWd-em-gqd"/>
+                <constraint firstItem="Sxj-Wf-uWJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="HI0-86-TYY"/>
+                <constraint firstAttribute="trailing" secondItem="Inh-So-qYG" secondAttribute="trailing" constant="8" id="YHg-oR-xed"/>
+                <constraint firstAttribute="trailing" secondItem="dr5-ok-vd4" secondAttribute="trailing" constant="8" id="i7i-Ao-ynr"/>
+                <constraint firstItem="Inh-So-qYG" firstAttribute="top" secondItem="Sxj-Wf-uWJ" secondAttribute="bottom" constant="8" id="kJu-yu-yO7"/>
+                <constraint firstItem="Sxj-Wf-uWJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="pFZ-YK-jL5"/>
+                <constraint firstItem="Inh-So-qYG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="xom-qX-Wfu"/>
+            </constraints>
+            <size key="customSize" width="247" height="105"/>
+            <connections>
+                <outlet property="answerLabel" destination="dr5-ok-vd4" id="gE9-Un-tHR"/>
+                <outlet property="numberLabel" destination="Sxj-Wf-uWJ" id="Ds7-qj-yi5"/>
+                <outlet property="questionLabel" destination="Inh-So-qYG" id="LBn-yR-vty"/>
+            </connections>
+            <point key="canvasLocation" x="132.5" y="112.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

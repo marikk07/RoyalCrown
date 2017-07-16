@@ -24,6 +24,8 @@ struct CollectionViewCellIdentifiers {
     static let quizCell = "QuizCell"
     static let testProgressCell = "TestProgressCell"
     static let answerCell = "AnswerCell"
+    static let reviewAnswersCell = "ReviewAnswersCell"
+    static let tryAgainCell = "TryAgainCell"
     
 }
 
@@ -37,6 +39,7 @@ struct ViewControllersIdentifiers {
     static let quizViewController = "QuizViewController"
     static let questionTestViewController = "QuestionTestViewController"
     static let resultViewController = "ResultViewController"
+    static let reviewAnswersViewController = "ReviewAnswersViewController"
 }
 
 struct ConstraightConst {
