@@ -58,14 +58,16 @@ extension AboutViewController: UICollectionViewDataSource, UICollectionViewDeleg
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         switch indexPath.row {
-        case 0:  break
+        case 0:
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.aboutUsViewController) as! AboutUsViewController
+            self.navigationController?.pushViewController(vc, animated: true)
             
         case 1:
             let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.mapViewController) as! GoogleMapViewController
             self.navigationController?.pushViewController(vc, animated: true)
             
-        case 2: break
-            
+        case 2:
+            UIApplication.shared.openURL(URL(string: "https://cw.royalcrowninsurance.eu/Login.aspx?ReturnUrl=%2f")!)
         default: break
         }
         

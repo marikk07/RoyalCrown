@@ -17,7 +17,7 @@ class HomeScreenViewController: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nibName = UINib(nibName: "MainCell", bundle:nil)
+        let nibName = UINib(nibName:CollectionViewCellIdentifiers.mainCell, bundle:nil)
         self.homeCollectionView.register(nibName, forCellWithReuseIdentifier:CollectionViewCellIdentifiers.mainCell)
 
     }
@@ -61,10 +61,16 @@ extension HomeScreenViewController: UICollectionViewDataSource, UICollectionView
             let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.royalAssistViewController) as! RoyalAssistViewController
             self.navigationController?.pushViewController(vc, animated: true)
             
-        case 1: break
+        case 1:
+            UIApplication.shared.openURL(URL(string: "https://www.jccsmart.com/eBills/Welcome/Index/9634031")!)
+        case 2:
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.servicesViewController) as! ServicesViewController
+            self.navigationController?.pushViewController(vc, animated: true)
             
-        case 2: break
-        case 3: break
+        case 3:
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.accidentListViewController) as! AccidentListViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         case 4:
             let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.aboutViewController) as! AboutViewController
             self.navigationController?.pushViewController(vc, animated: true)

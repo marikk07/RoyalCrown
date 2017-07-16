@@ -102,6 +102,95 @@ class RestManager {
     }
     
     
+    func reportAccident(name : String, policyNamber : String, phoneNamber : String, photos : Array<Any>, completionHandler: @escaping CompletionHandler)  {
+        
+        let params = ["name"              :name,
+                      "reg_policy_number" :policyNamber,
+                      "phone_number"      :phoneNamber,
+                      "photos_attributes" :photos] as [String : Any]
+        
+        Alamofire.request(RestBaseConstants.basePath + RestRequstsConstants.accidentReports, method: .post, parameters: params).responseJSON {
+            (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar : [JSON] = [JSON(responseData.result.value!)]
+
+                
+                completionHandler(swiftyJsonVar, nil)
+                
+            }
+        }
+    }
+    
+    
+    func getAboutRoyalAssist(completionHandler: @escaping CompletionHandler) {
+        
+        
+        Alamofire.request(RestBaseConstants.basePath + RestRequstsConstants.aboutRoyalAssist, method: .get).responseJSON {
+            (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar : [JSON] = [JSON(responseData.result.value!)]
+                
+                let message = swiftyJsonVar.first?["about_royal_assist"].string
+                
+                completionHandler(message, nil)
+                
+            }
+        }
+    }
+    
+    func getServices(type : String, completionHandler: @escaping CompletionHandler) {
+        let params = ["service_type":type]
+        
+        Alamofire.request(RestBaseConstants.basePath + RestRequstsConstants.services, method: .get, parameters: params).responseJSON {
+            (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar : [JSON] = [JSON(responseData.result.value!)]
+                
+                var servicesArray : [Any] = []
+                
+                for service in (swiftyJsonVar.first?.array)! {
+                    let branchModel = ServiceModel.init(json: service)
+                    servicesArray.append(branchModel!)
+                }
+                completionHandler(servicesArray, nil)
+                
+            }
+        }
+    }
+    
+    func getAccidentInstructions(completionHandler: @escaping CompletionHandler)  {
+        
+        Alamofire.request(RestBaseConstants.basePath + RestRequstsConstants.accidentInstructions, method: .get).responseJSON {
+            (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar : [JSON] = [JSON(responseData.result.value!)]
+                
+                var accidentArray : [Any] = []
+                
+                for service in (swiftyJsonVar.first?.array)! {
+                    let accident = AccidentInstructionsModel.init(json: service)
+                    accidentArray.append(accident!)
+                }
+                completionHandler(accidentArray, nil)
+                
+            }
+        }
+        
+    }
+    
+    func aboutUs(completionHandler: @escaping CompletionHandler)  {
+        Alamofire.request(RestBaseConstants.basePath + RestRequstsConstants.aboutUs, method: .get).responseJSON {
+            (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar : [JSON] = [JSON(responseData.result.value!)]
+                
+                let message = swiftyJsonVar.first?["about_us"].string
+                
+                completionHandler(message, nil)
+                
+            }
+        }
+    }
 
     
 }

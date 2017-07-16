@@ -52,7 +52,7 @@ class CameraViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        captureImageView.layer.cornerRadius = 16.0
+        captureImageView.layer.cornerRadius = 10.0
         captureImageView.layer.masksToBounds = true
         loadCamera()
     }

@@ -24,6 +24,16 @@
 		568019E51F1A101000798EB0 /* ReviewAnswersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019E41F1A101000798EB0 /* ReviewAnswersViewController.swift */; };
 		568019E91F1B3B3500798EB0 /* TryAgainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019E71F1B3B3500798EB0 /* TryAgainCell.swift */; };
 		568019EA1F1B3B3500798EB0 /* TryAgainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568019E81F1B3B3500798EB0 /* TryAgainCell.xib */; };
+		568019F01F1B76C400798EB0 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019EF1F1B76C400798EB0 /* ServicesViewController.swift */; };
+		568019F21F1B7FC100798EB0 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019F11F1B7FC100798EB0 /* ServiceModel.swift */; };
+		568019F51F1B85F800798EB0 /* ServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019F41F1B85F800798EB0 /* ServicesListViewController.swift */; };
+		568019F91F1B873B00798EB0 /* ServicesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019F71F1B873B00798EB0 /* ServicesListCell.swift */; };
+		568019FA1F1B873B00798EB0 /* ServicesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568019F81F1B873B00798EB0 /* ServicesListCell.xib */; };
+		568019FC1F1B997C00798EB0 /* ServiceDescriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019FB1F1B997C00798EB0 /* ServiceDescriptViewController.swift */; };
+		568019FF1F1BC2F000798EB0 /* AccidentInstructionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568019FE1F1BC2F000798EB0 /* AccidentInstructionsModel.swift */; };
+		56801A021F1BC78B00798EB0 /* AccidentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56801A011F1BC78B00798EB0 /* AccidentListViewController.swift */; };
+		56801A051F1BCCE300798EB0 /* AccidentDesctiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56801A041F1BCCE300798EB0 /* AccidentDesctiptViewController.swift */; };
+		56801A081F1BDA2A00798EB0 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56801A071F1BDA2A00798EB0 /* AboutUsViewController.swift */; };
 		56B30B491F1347B900D11341 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B481F1347B900D11341 /* Marker.swift */; };
 		56B30B4C1F14D9C800D11341 /* MapBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B30B4B1F14D9C800D11341 /* MapBottomView.swift */; };
 		56B30B501F14F89B00D11341 /* MapBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B30B4F1F14F89A00D11341 /* MapBottomView.xib */; };
@@ -94,6 +104,16 @@
 		568019E41F1A101000798EB0 /* ReviewAnswersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewAnswersViewController.swift; path = ReviewAnswersVC/ReviewAnswersViewController.swift; sourceTree = "<group>"; };
 		568019E71F1B3B3500798EB0 /* TryAgainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TryAgainCell.swift; path = Cells/TryAgainCell.swift; sourceTree = "<group>"; };
 		568019E81F1B3B3500798EB0 /* TryAgainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TryAgainCell.xib; path = Cells/TryAgainCell.xib; sourceTree = "<group>"; };
+		568019EF1F1B76C400798EB0 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServicesViewController.swift; path = ServicesVC/ServicesViewController.swift; sourceTree = "<group>"; };
+		568019F11F1B7FC100798EB0 /* ServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceModel.swift; path = Models/ServiceModel.swift; sourceTree = "<group>"; };
+		568019F41F1B85F800798EB0 /* ServicesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServicesListViewController.swift; path = ServicesListVC/ServicesListViewController.swift; sourceTree = "<group>"; };
+		568019F71F1B873B00798EB0 /* ServicesListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServicesListCell.swift; path = Cells/ServicesListCell.swift; sourceTree = "<group>"; };
+		568019F81F1B873B00798EB0 /* ServicesListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ServicesListCell.xib; path = Cells/ServicesListCell.xib; sourceTree = "<group>"; };
+		568019FB1F1B997C00798EB0 /* ServiceDescriptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceDescriptViewController.swift; path = ServiceDescriptVC/ServiceDescriptViewController.swift; sourceTree = "<group>"; };
+		568019FE1F1BC2F000798EB0 /* AccidentInstructionsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccidentInstructionsModel.swift; path = Models/AccidentInstructionsModel.swift; sourceTree = "<group>"; };
+		56801A011F1BC78B00798EB0 /* AccidentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccidentListViewController.swift; path = AccidentListVC/AccidentListViewController.swift; sourceTree = "<group>"; };
+		56801A041F1BCCE300798EB0 /* AccidentDesctiptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccidentDesctiptViewController.swift; path = AccidentDesctiptVC/AccidentDesctiptViewController.swift; sourceTree = "<group>"; };
+		56801A071F1BDA2A00798EB0 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutUsViewController.swift; path = AboutUsVC/AboutUsViewController.swift; sourceTree = "<group>"; };
 		56B30B481F1347B900D11341 /* Marker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Marker.swift; path = Models/Marker.swift; sourceTree = "<group>"; };
 		56B30B4B1F14D9C800D11341 /* MapBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapBottomView.swift; path = Views/MapBottomView/MapBottomView.swift; sourceTree = "<group>"; };
 		56B30B4F1F14F89A00D11341 /* MapBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapBottomView.xib; path = Views/MapBottomView/MapBottomView.xib; sourceTree = "<group>"; };
@@ -182,6 +202,7 @@
 		562540391F10B94700C38A0C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				568019F61F1B871600798EB0 /* ServicesListCell */,
 				568019E61F1B3B0900798EB0 /* TryAgainCell */,
 				568019DE1F1A0E6900798EB0 /* ReviewAnswersCell */,
 				56B30B691F17E69A00D11341 /* AnswerCell */,
@@ -239,6 +260,8 @@
 				56B30B6E1F1878BD00D11341 /* TestModel.swift */,
 				56B30B701F1879A600D11341 /* AnswersModel.swift */,
 				56B30B751F19F8EF00D11341 /* QuestionnaireResults.swift */,
+				568019F11F1B7FC100798EB0 /* ServiceModel.swift */,
+				568019FE1F1BC2F000798EB0 /* AccidentInstructionsModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -267,6 +290,63 @@
 				568019E81F1B3B3500798EB0 /* TryAgainCell.xib */,
 			);
 			name = TryAgainCell;
+			sourceTree = "<group>";
+		};
+		568019EE1F1B76AF00798EB0 /* ServicesVC */ = {
+			isa = PBXGroup;
+			children = (
+				568019EF1F1B76C400798EB0 /* ServicesViewController.swift */,
+			);
+			name = ServicesVC;
+			sourceTree = "<group>";
+		};
+		568019F31F1B85CF00798EB0 /* ServicesListVC */ = {
+			isa = PBXGroup;
+			children = (
+				568019F41F1B85F800798EB0 /* ServicesListViewController.swift */,
+			);
+			name = ServicesListVC;
+			sourceTree = "<group>";
+		};
+		568019F61F1B871600798EB0 /* ServicesListCell */ = {
+			isa = PBXGroup;
+			children = (
+				568019F71F1B873B00798EB0 /* ServicesListCell.swift */,
+				568019F81F1B873B00798EB0 /* ServicesListCell.xib */,
+			);
+			name = ServicesListCell;
+			sourceTree = "<group>";
+		};
+		568019FD1F1B998500798EB0 /* ServiceDescriptVC */ = {
+			isa = PBXGroup;
+			children = (
+				568019FB1F1B997C00798EB0 /* ServiceDescriptViewController.swift */,
+			);
+			name = ServiceDescriptVC;
+			sourceTree = "<group>";
+		};
+		56801A001F1BC76600798EB0 /* AccidentListVC */ = {
+			isa = PBXGroup;
+			children = (
+				56801A011F1BC78B00798EB0 /* AccidentListViewController.swift */,
+			);
+			name = AccidentListVC;
+			sourceTree = "<group>";
+		};
+		56801A031F1BCCB900798EB0 /* AccidentDesctiptVC */ = {
+			isa = PBXGroup;
+			children = (
+				56801A041F1BCCE300798EB0 /* AccidentDesctiptViewController.swift */,
+			);
+			name = AccidentDesctiptVC;
+			sourceTree = "<group>";
+		};
+		56801A061F1BDA0300798EB0 /* AboutUsVC */ = {
+			isa = PBXGroup;
+			children = (
+				56801A071F1BDA2A00798EB0 /* AboutUsViewController.swift */,
+			);
+			name = AboutUsVC;
 			sourceTree = "<group>";
 		};
 		56B30B4A1F14D3FE00D11341 /* Views */ = {
@@ -416,6 +496,12 @@
 		56C4A4681F0AAD0C008E9867 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				56801A061F1BDA0300798EB0 /* AboutUsVC */,
+				56801A031F1BCCB900798EB0 /* AccidentDesctiptVC */,
+				56801A001F1BC76600798EB0 /* AccidentListVC */,
+				568019FD1F1B998500798EB0 /* ServiceDescriptVC */,
+				568019F31F1B85CF00798EB0 /* ServicesListVC */,
+				568019EE1F1B76AF00798EB0 /* ServicesVC */,
 				568019E31F1A0FC100798EB0 /* ReviewAnswersVC */,
 				56B30B721F191BB100D11341 /* ResultVC */,
 				56B30B511F175A0200D11341 /* QuizVC */,
@@ -641,6 +727,7 @@
 				56B30B581F175EFD00D11341 /* QuizCell.xib in Resources */,
 				562540411F10BE0400C38A0C /* PhotoCell.xib in Resources */,
 				568019E21F1A0E9B00798EB0 /* ReviewAnswersCell.xib in Resources */,
+				568019FA1F1B873B00798EB0 /* ServicesListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,7 +891,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				56C4A4791F0C9319008E9867 /* AboutRoyalAssistViewController.swift in Sources */,
+				56801A051F1BCCE300798EB0 /* AccidentDesctiptViewController.swift in Sources */,
 				56C4A4761F0C18E7008E9867 /* AlertHelper.swift in Sources */,
+				56801A021F1BC78B00798EB0 /* AccidentListViewController.swift in Sources */,
+				568019F51F1B85F800798EB0 /* ServicesListViewController.swift in Sources */,
 				56C4A4711F0B5333008E9867 /* RoyalAssistViewController.swift in Sources */,
 				567A25D11F1222DD004D3AC1 /* RestManager.swift in Sources */,
 				567A25CD1F12043B004D3AC1 /* PhotoCellWithCancell.swift in Sources */,
@@ -812,20 +902,26 @@
 				56B30B491F1347B900D11341 /* Marker.swift in Sources */,
 				56B30B661F1787E500D11341 /* TestProgressCell.swift in Sources */,
 				56B30B4C1F14D9C800D11341 /* MapBottomView.swift in Sources */,
+				568019F01F1B76C400798EB0 /* ServicesViewController.swift in Sources */,
 				56B30B761F19F8EF00D11341 /* QuestionnaireResults.swift in Sources */,
 				56C9EDB71F0DEE120080A4D8 /* CameraViewController.swift in Sources */,
+				568019F91F1B873B00798EB0 /* ServicesListCell.swift in Sources */,
+				56801A081F1BDA2A00798EB0 /* AboutUsViewController.swift in Sources */,
 				568019E11F1A0E9B00798EB0 /* ReviewAnswersCell.swift in Sources */,
 				568019E91F1B3B3500798EB0 /* TryAgainCell.swift in Sources */,
 				56B30B531F175AAF00D11341 /* QuizViewController.swift in Sources */,
 				562540371F10B29C00C38A0C /* MainCell.swift in Sources */,
 				562540401F10BE0400C38A0C /* PhotoCell.swift in Sources */,
+				568019F21F1B7FC100798EB0 /* ServiceModel.swift in Sources */,
 				56C4A4381F0AA80D008E9867 /* AppDelegate.swift in Sources */,
+				568019FF1F1BC2F000798EB0 /* AccidentInstructionsModel.swift in Sources */,
 				56C4A46D1F0ABD5C008E9867 /* Constants.swift in Sources */,
 				56B30B5A1F1772CD00D11341 /* QuestionnaireModel.swift in Sources */,
 				567A25D31F12394E004D3AC1 /* RestConstatns.swift in Sources */,
 				568019E51F1A101000798EB0 /* ReviewAnswersViewController.swift in Sources */,
 				567A25D61F12700D004D3AC1 /* BranchModel.swift in Sources */,
 				56C4A4661F0AACE3008E9867 /* HomeScreenViewController.swift in Sources */,
+				568019FC1F1B997C00798EB0 /* ServiceDescriptViewController.swift in Sources */,
 				56C9EDAE1F0CE4560080A4D8 /* AboutViewController.swift in Sources */,
 				56B30B6C1F17E6C600D11341 /* AnswerCell.swift in Sources */,
 				56B30B5C1F177B7600D11341 /* QuestionTestViewController.swift in Sources */,
