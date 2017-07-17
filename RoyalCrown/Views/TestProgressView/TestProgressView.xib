@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TestProgressView" customModule="RoyalCrown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="525" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnG-gq-gsw">
+                    <rect key="frame" x="473" y="59" width="32" height="30"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" red="0.18823529410000001" green="0.16862745100000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nextAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="RmP-Ey-b7i"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23r-SG-mpw">
+                    <rect key="frame" x="20" y="59" width="31" height="30"/>
+                    <state key="normal" title="Prev">
+                        <color key="titleColor" red="0.18823529410000001" green="0.16862745100000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="previousAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="IG9-CE-t7o"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-o5-jJb">
+                    <rect key="frame" x="71" y="54.5" width="382" height="39"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fRW-o5-jJb" secondAttribute="height" multiplier="1:0.1" constant="-5" id="cXy-Cg-gHP"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="5" id="WI9-nq-5NN">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="peh-h6-bd1"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="qj0-I8-5M4"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gv6-oz-1vO">
+                    <rect key="frame" x="0.0" y="0.0" width="525" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KG5-IQ-mt0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gv6-oz-1vO" secondAttribute="trailing" id="C2z-Ee-rsO"/>
+                <constraint firstItem="fRW-o5-jJb" firstAttribute="leading" secondItem="23r-SG-mpw" secondAttribute="trailing" constant="20" id="MeH-JW-tnN"/>
+                <constraint firstItem="fRW-o5-jJb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OWS-vo-LC3"/>
+                <constraint firstItem="23r-SG-mpw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Wna-wq-Vtf"/>
+                <constraint firstItem="ZnG-gq-gsw" firstAttribute="leading" secondItem="fRW-o5-jJb" secondAttribute="trailing" constant="20" id="b6x-hz-qrl"/>
+                <constraint firstItem="ZnG-gq-gsw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="f6K-oF-fri"/>
+                <constraint firstAttribute="trailing" secondItem="ZnG-gq-gsw" secondAttribute="trailing" constant="20" id="f8Z-hB-Glx"/>
+                <constraint firstItem="gv6-oz-1vO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g78-Uy-1cH"/>
+                <constraint firstItem="gv6-oz-1vO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t4O-8G-Lcx"/>
+                <constraint firstItem="23r-SG-mpw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uCd-a2-SHK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="progressCollection" destination="fRW-o5-jJb" id="bgf-1Z-Nup"/>
+            </connections>
+            <point key="canvasLocation" x="99.5" y="387"/>
+        </view>
+    </objects>
+</document>
