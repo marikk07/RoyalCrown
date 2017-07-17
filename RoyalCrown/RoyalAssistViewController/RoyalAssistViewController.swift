@@ -11,8 +11,8 @@ import UIKit
 class RoyalAssistViewController: UIViewController {
     @IBOutlet weak var royalCollectionView: UICollectionView!
 
-    let cellsImgArry = ["royal_assist_image","royal_payment_image","services_image"]
-    let cellsTitlesArray = ["REPORT AN ACCIDENT", "MAKE A CALL", "ABOUT ROYAL ASSIST"]
+    fileprivate let cellsImgArry = ["royal_assist_image","royal_payment_image","services_image"]
+    fileprivate let cellsTitlesArray = ["REPORT AN ACCIDENT", "MAKE A CALL", "ABOUT ROYAL ASSIST"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

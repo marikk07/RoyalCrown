@@ -10,15 +10,15 @@ import UIKit
 
 class AccidentReportViewController: UIViewController {
     
-    @IBOutlet weak var photoCollectionView: UICollectionView!
-    @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var registerNamberField: UITextField!
-    @IBOutlet weak var phoneField: UITextField!
-    @IBOutlet weak var agreSwitch: UISwitch!
-    @IBOutlet weak var reportButton: UIButton!
-    @IBOutlet weak var firstLine: UIView!
-    @IBOutlet weak var secondLine: UIView!
-    @IBOutlet weak var thirdLine: UIView!
+    @IBOutlet fileprivate weak var photoCollectionView: UICollectionView!
+    @IBOutlet fileprivate weak var nameField: UITextField!
+    @IBOutlet fileprivate weak var registerNamberField: UITextField!
+    @IBOutlet fileprivate weak var phoneField: UITextField!
+    @IBOutlet private weak var agreSwitch: UISwitch!
+    @IBOutlet private weak var reportButton: UIButton!
+    @IBOutlet fileprivate weak var firstLine: UIView!
+    @IBOutlet fileprivate weak var secondLine: UIView!
+    @IBOutlet fileprivate weak var thirdLine: UIView!
     
     fileprivate var arrayPhotos : [Any] = []
     
@@ -124,7 +124,7 @@ extension  AccidentReportViewController: UICollectionViewDataSource, UICollectio
             vc.delegate = self
             self.present(vc, animated: true, completion: nil)
         }else{
-            arrayPhotos.remove(at: indexPath.row)
+            arrayPhotos.remove(at: indexPath.row - 1)
             photoCollectionView.reloadData()
         }
     }

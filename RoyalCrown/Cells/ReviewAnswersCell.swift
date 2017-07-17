@@ -10,9 +10,9 @@ import UIKit
 
 class ReviewAnswersCell: UICollectionViewCell {
 
-    @IBOutlet weak var numberLabel: UILabel!
-    @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet private weak var numberLabel: UILabel!
+    @IBOutlet private weak var questionLabel: UILabel!
+    @IBOutlet private weak var answerLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

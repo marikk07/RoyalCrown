@@ -10,7 +10,7 @@ import UIKit
 
 class ServicesListViewController: UIViewController {
     
-    @IBOutlet weak var tittleLabel: UILabel!
+    @IBOutlet fileprivate weak var tittleLabel: UILabel!
     @IBOutlet fileprivate weak var servicesTable: UITableView!
     fileprivate var servicesArray: [ServiceModel]? = []
     var serviceType: String?

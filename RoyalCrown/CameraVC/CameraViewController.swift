@@ -24,6 +24,7 @@ class CameraViewController: UIViewController {
     @IBOutlet private weak var photoCollectionView: UICollectionView!
     @IBOutlet private weak var switchButton: UIButton!
     @IBOutlet private weak var flashButton: UIButton!
+    @IBOutlet fileprivate weak var countLabel: UILabel!
     
     
     fileprivate  var assetsFetchResults : PHFetchResult<AnyObject>?
@@ -34,8 +35,8 @@ class CameraViewController: UIViewController {
     private  var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     private  var currentCaptureDevice: AVCaptureDevice?
     private  var usingFrontCamera = false
-    fileprivate  var selectedPhotoSet : NSSet = []
-    fileprivate  var photoImg  : [Any] = []
+    fileprivate  var selectedPhotoSet : [PHAsset] = []
+    fileprivate  var photoImg  : [UIImage] = []
     
      var delegate: CameraDelegate?
     
@@ -45,7 +46,7 @@ class CameraViewController: UIViewController {
         photoCollectionView.register(nibName, forCellWithReuseIdentifier:CollectionViewCellIdentifiers.photoCell)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.makePhotoAction(_:)))
         cameraActView.addGestureRecognizer(tapGesture)
-        
+
         fetchPhotoFromLibrary()
         
         
@@ -64,7 +65,6 @@ class CameraViewController: UIViewController {
         videoPreviewLayer?.addSublayer(bottomView.layer)
         videoPreviewLayer?.addSublayer(viewWithCollection.layer)
         videoPreviewLayer?.addSublayer(switchButton.layer)
-        videoPreviewLayer?.addSublayer(flashButton.layer)
     }
     
 
@@ -193,9 +193,9 @@ extension CameraViewController: UICollectionViewDataSource, UICollectionViewDele
         let asset = assetsFetchResults?[indexPath.item];
         imageManager?.requestImage(for: asset as! PHAsset, targetSize: cell.frame.size, contentMode: PHImageContentMode(rawValue: 1)!, options: nil) { (result, info) in
             cell.setUpWithImage(image: result!)
-            if self.selectedPhotoSet.contains((self.assetsFetchResults?.object(at: indexPath.row)) as Any){
-                cell.selectedView.isHidden = false
-            }
+//            if (self.selectedPhotoSet.contains((self.assetsFetchResults?.object(at: indexPath.row)) as Any)){
+//                cell.selectedView.isHidden = false
+//            }
         }
         
         
@@ -217,13 +217,30 @@ extension CameraViewController: UICollectionViewDataSource, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! PhotoCell
         cell.selectCell()
-        if selectedPhotoSet.contains((assetsFetchResults?.object(at: indexPath.row)) as Any){
-            selectedPhotoSet.replacementObject(for:(assetsFetchResults?.object(at: indexPath.row))! as! NSKeyedArchiver)
-            photoImg.remove(at: indexPath.row)
+
+        let checkArray = self.photoImg.filter({ $0 == cell.backImage.image })
+        
+        if checkArray.count > 0{
+            for i in 0  ..< self.photoImg.count {
+                if self.photoImg[i] == checkArray.first {
+                    self.photoImg.remove(at: i)
+                    break
+                }
+            }
+
         }else{
-            selectedPhotoSet.adding(assetsFetchResults?.object(at: indexPath.row) as Any)
-            photoImg.append(cell.backImage.image as Any)
+            photoImg.append(cell.backImage.image!)
+
         }
+
+        
+        countLabel.text = String(photoImg.count)
+        if photoImg.count < 1 {
+            countLabel.isHidden = true
+        }else {
+            countLabel.isHidden = false
+        }
+        
         
     }
     

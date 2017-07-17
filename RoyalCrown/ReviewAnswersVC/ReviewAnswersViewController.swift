@@ -10,10 +10,10 @@ import UIKit
 
 class ReviewAnswersViewController: UIViewController {
     @IBOutlet fileprivate weak var reviewCollection: UICollectionView!
-    @IBOutlet weak var tryAgainButton: UIButton!
-    var anwerArray : [Any] = []
+    @IBOutlet private weak var tryAgainButton: UIButton!
+    fileprivate var anwerArray : [Any] = []
     var questionList : [TestModel]?
-    @IBOutlet weak var collectionHeight: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var collectionHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         

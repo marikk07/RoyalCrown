@@ -10,7 +10,7 @@ import UIKit
 
 class ServiceDescriptViewController: UIViewController {
     @IBOutlet private weak var topLabel: UILabel!
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet private weak var webView: UIWebView!
     var service : ServiceModel?
     override func viewDidLoad() {
         super.viewDidLoad()
