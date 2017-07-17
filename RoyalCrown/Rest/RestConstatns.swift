@@ -18,7 +18,7 @@ struct RestBaseConstants {
 struct RestRequstsConstants {
     static let branches                 = "branches"
     static let accidentInstructions     = "accident_instructions"
-    static let baseUrl                  = "services"
+    static let services                  = "services"
     static let aboutUs                  = "about_us"
     static let aboutRoyalAssist         = "about_royal_assist"
     static let accidentReports          = "accident_reports"
@@ -28,7 +28,10 @@ struct RestRequstsConstants {
     static let contacts                 = "contacts"
 }
 
-
+struct MapsPath {
+    
+    static let baseUrl = "https://maps.googleapis.com/maps/api/directions/json?origin="
+}
 
 // MARK: MessageType
 

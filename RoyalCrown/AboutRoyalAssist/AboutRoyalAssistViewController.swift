@@ -10,10 +10,25 @@ import UIKit
 
 class AboutRoyalAssistViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        RestManager().getAboutRoyalAssist { (message, error) in
+            if message != nil {
+                self.webView.scrollView.bounces = false;
+                let messageWithColor = "<div style='color:#302B80'>" + (message as! String) + "</div>"
+                self.webView.loadHTMLString(messageWithColor, baseURL: nil)
+            
+            }
+        }
+        
     }
 
     // MARK - Acions

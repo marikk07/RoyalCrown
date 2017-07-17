@@ -8,25 +8,24 @@
 
 import UIKit
 
-class HomeScreenViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class HomeScreenViewController: UIViewController {
     
     @IBOutlet weak var homeCollectionView: UICollectionView!
-    let cellsImgArry = ["royal_assist_image","royal_payment_image","services_image", "what_to_do_if_image", "about_image", "royal_assist_image"]
-    
-    let cellsTitlesArray = ["ROYAL ASSIST", "ROYAL PAYMENT", "SERVICES", "WHAT TO DO IF", "ABOUT", "QUESTIONARIS"]
+
+    fileprivate let cellsImgArry = ["royal_assist_image","royal_payment_image","services_image", "what_to_do_if_image", "about_image", "royal_assist_image"]
+
+    fileprivate let cellsTitlesArray = ["ROYAL ASSIST", "ROYAL PAYMENT", "SERVICES", "WHAT TO DO IF", "ABOUT", "QUESTIONARIS"]
  
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nibName = UINib(nibName: "MainCell", bundle:nil)
+        let nibName = UINib(nibName:CollectionViewCellIdentifiers.mainCell, bundle:nil)
         self.homeCollectionView.register(nibName, forCellWithReuseIdentifier:CollectionViewCellIdentifiers.mainCell)
 
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
+}
+
+extension HomeScreenViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     // MARK: - UICollectionViewDataSource
     
@@ -46,7 +45,7 @@ class HomeScreenViewController: UIViewController, UICollectionViewDataSource, UI
         
         let cellHeight:CGFloat = homeCollectionView.frame.height/3
         var cellWidth:CGFloat = homeCollectionView.frame.width/2 - 5
-
+        
         if indexPath.row%3 == 2{
             cellWidth = homeCollectionView.frame.width
         }
@@ -63,20 +62,27 @@ class HomeScreenViewController: UIViewController, UICollectionViewDataSource, UI
             let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.royalAssistViewController) as! RoyalAssistViewController
             self.navigationController?.pushViewController(vc, animated: true)
             
-        case 1: break
+        case 1:
+            UIApplication.shared.openURL(URL(string: "https://www.jccsmart.com/eBills/Welcome/Index/9634031")!)
+        case 2:
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.servicesViewController) as! ServicesViewController
+            self.navigationController?.pushViewController(vc, animated: true)
             
-        case 2: break
-        case 3: break
+        case 3:
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.accidentListViewController) as! AccidentListViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         case 4:
             let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.aboutViewController) as! AboutViewController
             self.navigationController?.pushViewController(vc, animated: true)
             
-        case 5: break
-
+        case 5:
+            let vc = storyboard?.instantiateViewController(withIdentifier:ViewControllersIdentifiers.quizViewController) as! QuizViewController
+            self.navigationController?.pushViewController(vc, animated: true)
             
         default: break
         }
-       
+        
     }
-
+    
 }

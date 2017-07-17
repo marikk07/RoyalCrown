@@ -15,7 +15,7 @@ protocol CameraDelegate {
 }
 
 
-class CameraViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class CameraViewController: UIViewController {
     @IBOutlet private var previewView: UIView!
     @IBOutlet private weak var bottomView: UIView!
     @IBOutlet private weak var viewWithCollection: UIView!
@@ -24,18 +24,19 @@ class CameraViewController: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet private weak var photoCollectionView: UICollectionView!
     @IBOutlet private weak var switchButton: UIButton!
     @IBOutlet private weak var flashButton: UIButton!
+    @IBOutlet fileprivate weak var countLabel: UILabel!
     
     
-    private  var assetsFetchResults : PHFetchResult<AnyObject>?
-    private  var imageManager : PHCachingImageManager?
+    fileprivate  var assetsFetchResults : PHFetchResult<AnyObject>?
+    fileprivate  var imageManager : PHCachingImageManager?
     private  var session: AVCaptureSession?
     private  var captureSession: AVCaptureSession?
     private  var stillImageOutput: AVCaptureStillImageOutput?
     private  var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     private  var currentCaptureDevice: AVCaptureDevice?
     private  var usingFrontCamera = false
-    private  var selectedPhotoSet : NSMutableSet = []
-    private  var photoImg : NSMutableArray = []
+    fileprivate  var selectedPhotoSet : [PHAsset] = []
+    fileprivate  var photoImg  : [UIImage] = []
     
      var delegate: CameraDelegate?
     
@@ -45,14 +46,14 @@ class CameraViewController: UIViewController, UICollectionViewDataSource, UIColl
         photoCollectionView.register(nibName, forCellWithReuseIdentifier:CollectionViewCellIdentifiers.photoCell)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.makePhotoAction(_:)))
         cameraActView.addGestureRecognizer(tapGesture)
-        
+
         fetchPhotoFromLibrary()
         
         
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        captureImageView.layer.cornerRadius = 16.0
+        captureImageView.layer.cornerRadius = 10.0
         captureImageView.layer.masksToBounds = true
         loadCamera()
     }
@@ -64,55 +65,9 @@ class CameraViewController: UIViewController, UICollectionViewDataSource, UIColl
         videoPreviewLayer?.addSublayer(bottomView.layer)
         videoPreviewLayer?.addSublayer(viewWithCollection.layer)
         videoPreviewLayer?.addSublayer(switchButton.layer)
-        videoPreviewLayer?.addSublayer(flashButton.layer)
     }
     
-    // MARK: - UICollectionViewDataSource
-    
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  assetsFetchResults!.count
-    }
-    
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: PhotoCell = collectionView.dequeueReusableCell(withReuseIdentifier:CollectionViewCellIdentifiers.photoCell, for: indexPath) as! PhotoCell
-        
-        let asset = assetsFetchResults?[indexPath.item];
-        imageManager?.requestImage(for: asset as! PHAsset, targetSize: cell.frame.size, contentMode: PHImageContentMode(rawValue: 1)!, options: nil) { (result, info) in
-            cell.setUpWithImage(image: result!)
-            if self.selectedPhotoSet.contains((self.assetsFetchResults?.object(at: indexPath.row)) as Any){
-                cell.selectedView.isHidden = false
-            }
-        }
-        
-        
-        return cell
-    }
-    
-    // MARK: - UICollectionViewDelegateFlowLayout
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let cellHeight:CGFloat = collectionView.frame.height
-        let cellWidth:CGFloat = collectionView.frame.width/4
-        
-        
-        return CGSize.init(width: cellWidth, height: cellHeight)
-    }
-    
-    // MARK - UICollectionViewDelegate
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! PhotoCell
-        cell.selectCell()
-        if selectedPhotoSet.contains((assetsFetchResults?.object(at: indexPath.row)) as Any){
-            selectedPhotoSet.remove(assetsFetchResults?.object(at: indexPath.row) as Any)
-            photoImg.remove(cell.backImage.image as Any)
-        }else{
-            selectedPhotoSet.add(assetsFetchResults?.object(at: indexPath.row) as Any)
-            photoImg.add(cell.backImage.image as Any)
-        }
-        
-    }
-    
+
     
     
     // MARK: - Actions
@@ -222,9 +177,72 @@ class CameraViewController: UIViewController, UICollectionViewDataSource, UIColl
         imageManager = PHCachingImageManager()
     }
     
+}
+
+extension CameraViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+    
+    // MARK: - UICollectionViewDataSource
+    
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return  assetsFetchResults!.count
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: PhotoCell = collectionView.dequeueReusableCell(withReuseIdentifier:CollectionViewCellIdentifiers.photoCell, for: indexPath) as! PhotoCell
+        
+        let asset = assetsFetchResults?[indexPath.item];
+        imageManager?.requestImage(for: asset as! PHAsset, targetSize: cell.frame.size, contentMode: PHImageContentMode(rawValue: 1)!, options: nil) { (result, info) in
+            cell.setUpWithImage(image: result!)
+//            if (self.selectedPhotoSet.contains((self.assetsFetchResults?.object(at: indexPath.row)) as Any)){
+//                cell.selectedView.isHidden = false
+//            }
+        }
+        
+        
+        return cell
+    }
+    
+    // MARK: - UICollectionViewDelegateFlowLayout
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let cellHeight:CGFloat = collectionView.frame.height
+        let cellWidth:CGFloat = collectionView.frame.width/4
+        
+        
+        return CGSize.init(width: cellWidth, height: cellHeight)
+    }
+    
+    // MARK - UICollectionViewDelegate
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! PhotoCell
+        cell.selectCell()
+
+        let checkArray = self.photoImg.filter({ $0 == cell.backImage.image })
+        
+        if checkArray.count > 0{
+            for i in 0  ..< self.photoImg.count {
+                if self.photoImg[i] == checkArray.first {
+                    self.photoImg.remove(at: i)
+                    break
+                }
+            }
+
+        }else{
+            photoImg.append(cell.backImage.image!)
+
+        }
 
         
+        countLabel.text = String(photoImg.count)
+        if photoImg.count < 1 {
+            countLabel.isHidden = true
+        }else {
+            countLabel.isHidden = false
+        }
         
+        
+    }
     
     
 }
